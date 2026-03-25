@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portal de entrenamientos de gimnasia artística con Emma Romero. Ejercicios, programación semanal y consejos para gimnastas." />
+  <meta property="og:title" content="Emma Romero · Gimnasia Artística" />
+  <meta property="og:description" content="Tu espacio de entrenamiento. Ejercicios, programas y consejos de Emma." />
+  <meta property="og:type" content="website" />
+  <title>Emma Romero · Gimnasia Artística</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===========================
+       CABECERA / NAV
+  =========================== -->
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#aparatos">Aparatos</a></li>
+        <li><a href="programa/index.html">Programa</a></li>
+        <li><a href="consejos/index.html">Consejos</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+    <!-- Menú móvil -->
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#aparatos">Aparatos</a></li>
+        <li><a href="programa/index.html">Programa</a></li>
+        <li><a href="consejos/index.html">Consejos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===========================
+         HERO
+    =========================== -->
+    <section class="hero" aria-label="Bienvenida">
+      <div class="hero__bg-shapes" aria-hidden="true">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+        <div class="shape shape--3"></div>
+      </div>
+      <div class="container hero__content">
+        <div class="hero__text reveal">
+          <span class="hero__badge">🤸 Tu entrenamiento, a tu ritmo</span>
+          <h1 class="hero__title">
+            ¡Hola, gimnasta!<br />
+            <span class="hero__title--accent">Empieza a entrenar</span>
+          </h1>
+          <p class="hero__subtitle">
+            Aquí encontrarás todo lo que necesitas para mejorar cada día.
+            Ejercicios, programas y los mejores consejos de <strong>Emma</strong>.
+          </p>
+          <div class="hero__actions">
+            <a href="#aparatos" class="btn btn--primary">
+              <i data-lucide="zap"></i>
+              Empezar ahora
+            </a>
+            <a href="programa/index.html" class="btn btn--outline">
+              Ver mi programa
+            </a>
+          </div>
+        </div>
+        <div class="hero__illustration reveal reveal--delay" aria-hidden="true">
+          <!-- Ilustración SVG de gimnasta -->
+          <svg class="gymnast-svg" viewBox="0 0 320 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Cuerpo gimnasta en posición de equilibrio (figura estilizada) -->
+            <!-- Cabeza -->
+            <circle cx="160" cy="60" r="32" fill="#F43F5E" opacity="0.9"/>
+            <circle cx="152" cy="54" r="4" fill="white"/>
+            <circle cx="168" cy="54" r="4" fill="white"/>
+            <path d="M152 70 Q160 78 168 70" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <!-- Moño -->
+            <ellipse cx="148" cy="36" rx="10" ry="6" fill="#FCD34D" transform="rotate(-20 148 36)"/>
+            <ellipse cx="172" cy="32" rx="10" ry="6" fill="#FCD34D" transform="rotate(20 172 32)"/>
+            <circle cx="160" cy="34" r="5" fill="#F43F5E"/>
+            <!-- Torso -->
+            <path d="M140 92 Q130 130 132 170 L188 170 Q190 130 180 92 Z" fill="#7C3AED" opacity="0.9"/>
+            <!-- Brazos (posición abierta como estrella) -->
+            <path d="M140 105 Q100 85 72 68" stroke="#F43F5E" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <path d="M180 105 Q220 85 248 68" stroke="#F43F5E" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <!-- Manos -->
+            <circle cx="70" cy="67" r="8" fill="#F43F5E"/>
+            <circle cx="250" cy="67" r="8" fill="#F43F5E"/>
+            <!-- Piernas -->
+            <path d="M152 170 Q148 220 145 270 Q142 295 138 320" stroke="#7C3AED" stroke-width="12" stroke-linecap="round" fill="none"/>
+            <path d="M168 170 Q172 220 175 270 Q178 295 182 320" stroke="#7C3AED" stroke-width="12" stroke-linecap="round" fill="none"/>
+            <!-- Pies -->
+            <ellipse cx="136" cy="324" rx="14" ry="7" fill="#7C3AED"/>
+            <ellipse cx="184" cy="324" rx="14" ry="7" fill="#7C3AED"/>
+            <!-- Destellos decorativos -->
+            <path d="M40 160 L46 150 L52 160 L46 170 Z" fill="#FCD34D"/>
+            <path d="M270 200 L276 190 L282 200 L276 210 Z" fill="#FCD34D"/>
+            <circle cx="60" cy="280" r="6" fill="#FCD34D" opacity="0.7"/>
+            <circle cx="280" cy="120" r="8" fill="#F43F5E" opacity="0.5"/>
+            <circle cx="90" cy="340" r="5" fill="#7C3AED" opacity="0.5"/>
+            <circle cx="240" cy="310" r="7" fill="#F43F5E" opacity="0.4"/>
+          </svg>
+          <!-- Tarjeta flotante: racha -->
+          <div class="hero__badge-float hero__badge-float--left">
+            <span class="badge-float__emoji">🏅</span>
+            <div>
+              <p class="badge-float__label">Esta semana</p>
+              <p class="badge-float__value">3 entrenamientos</p>
+            </div>
+          </div>
+          <!-- Tarjeta flotante: nivel -->
+          <div class="hero__badge-float hero__badge-float--right">
+            <span class="badge-float__emoji">⭐</span>
+            <div>
+              <p class="badge-float__label">Nivel</p>
+              <p class="badge-float__value">¡Tú eliges!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         ¿QUÉ QUIERES TRABAJAR HOY?
+    =========================== -->
+    <section class="section aparatos" id="aparatos" aria-labelledby="aparatos-titulo">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">🤸 Elige tu aparato</span>
+          <h2 class="section__title" id="aparatos-titulo">¿Qué quieres entrenar hoy?</h2>
+          <p class="section__subtitle">Selecciona el aparato y encuentra los ejercicios perfectos para ti.</p>
+        </div>
+
+        <div class="aparatos__grid">
+
+          <!-- Suelo -->
+          <a href="aparatos/suelo.html" class="aparato-card reveal" style="--card-color: #F43F5E; --card-bg: #FFF1F2;">
+            <div class="aparato-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="48" width="48" height="6" rx="3" fill="currentColor" opacity="0.3"/>
+                <circle cx="32" cy="22" r="8" fill="currentColor"/>
+                <path d="M20 36 Q24 28 32 30 Q40 28 44 36" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <path d="M16 48 Q20 40 28 42" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <path d="M48 48 Q44 40 36 42" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+              </svg>
+            </div>
+            <div class="aparato-card__content">
+              <h3 class="aparato-card__name">Suelo</h3>
+              <p class="aparato-card__desc">Acrobacias, series y coreografía</p>
+            </div>
+            <span class="aparato-card__arrow" aria-hidden="true"><i data-lucide="arrow-right"></i></span>
+          </a>
+
+          <!-- Barra de equilibrio -->
+          <a href="aparatos/barra.html" class="aparato-card reveal reveal--delay-1" style="--card-color: #7C3AED; --card-bg: #F5F3FF;">
+            <div class="aparato-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="32" width="56" height="5" rx="2.5" fill="currentColor" opacity="0.4"/>
+                <rect x="14" y="37" width="5" height="18" rx="2" fill="currentColor" opacity="0.3"/>
+                <rect x="45" y="37" width="5" height="18" rx="2" fill="currentColor" opacity="0.3"/>
+                <circle cx="32" cy="20" r="7" fill="currentColor"/>
+                <path d="M24 32 Q26 24 32 22 Q38 24 40 32" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M20 26 L26 28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <path d="M44 26 L38 28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="aparato-card__content">
+              <h3 class="aparato-card__name">Barra de equilibrio</h3>
+              <p class="aparato-card__desc">Equilibrio, saltos y giros</p>
+            </div>
+            <span class="aparato-card__arrow" aria-hidden="true"><i data-lucide="arrow-right"></i></span>
+          </a>
+
+          <!-- Paralelas asimétricas -->
+          <a href="aparatos/paralelas.html" class="aparato-card reveal reveal--delay-2" style="--card-color: #0EA5E9; --card-bg: #F0F9FF;">
+            <div class="aparato-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="18" width="56" height="4" rx="2" fill="currentColor" opacity="0.3"/>
+                <rect x="4" y="34" width="56" height="4" rx="2" fill="currentColor" opacity="0.5"/>
+                <rect x="10" y="38" width="4" height="18" rx="2" fill="currentColor" opacity="0.3"/>
+                <rect x="50" y="38" width="4" height="18" rx="2" fill="currentColor" opacity="0.3"/>
+                <rect x="10" y="22" width="4" height="12" rx="2" fill="currentColor" opacity="0.3"/>
+                <rect x="50" y="22" width="4" height="12" rx="2" fill="currentColor" opacity="0.3"/>
+                <circle cx="32" cy="28" r="6" fill="currentColor"/>
+                <path d="M26 18 Q28 12 32 10 Q38 12 38 18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="aparato-card__content">
+              <h3 class="aparato-card__name">Paralelas asimétricas</h3>
+              <p class="aparato-card__desc">Vuelos, molinos y agarre</p>
+            </div>
+            <span class="aparato-card__arrow" aria-hidden="true"><i data-lucide="arrow-right"></i></span>
+          </a>
+
+          <!-- Salto / Plinto -->
+          <a href="aparatos/salto.html" class="aparato-card reveal reveal--delay-3" style="--card-color: #F59E0B; --card-bg: #FFFBEB;">
+            <div class="aparato-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="36" width="24" height="14" rx="3" fill="currentColor" opacity="0.4"/>
+                <rect x="14" y="50" width="36" height="5" rx="2" fill="currentColor" opacity="0.3"/>
+                <circle cx="32" cy="18" r="7" fill="currentColor"/>
+                <path d="M25 36 Q24 26 30 22 Q36 20 38 36" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M22 30 L26 28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <path d="M42 30 L38 28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="aparato-card__content">
+              <h3 class="aparato-card__name">Salto / Plinto</h3>
+              <p class="aparato-card__desc">Impulso, vuelo y aterrizaje</p>
+            </div>
+            <span class="aparato-card__arrow" aria-hidden="true"><i data-lucide="arrow-right"></i></span>
+          </a>
+
+          <!-- Acrobacias -->
+          <a href="aparatos/acrobacias.html" class="aparato-card reveal reveal--delay-1" style="--card-color: #10B981; --card-bg: #ECFDF5;">
+            <div class="aparato-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="14" r="7" fill="currentColor"/>
+                <path d="M20 28 Q20 20 32 21 Q44 20 44 28 Q44 36 36 40 L32 50 L28 40 Q20 36 20 28Z" fill="currentColor" opacity="0.4"/>
+                <path d="M16 36 L22 32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <path d="M48 36 L42 32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <path d="M26 50 Q28 55 24 58" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <path d="M38 50 Q36 55 40 58" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+              </svg>
+            </div>
+            <div class="aparato-card__content">
+              <h3 class="aparato-card__name">Acrobacias y físico</h3>
+              <p class="aparato-card__desc">Fuerza, flexibilidad y técnica</p>
+            </div>
+            <span class="aparato-card__arrow" aria-hidden="true"><i data-lucide="arrow-right"></i></span>
+          </a>
+
+          <!-- Programa semanal (card especial) -->
+          <a href="programa/index.html" class="aparato-card aparato-card--featured reveal reveal--delay-2" style="--card-color: #ffffff; --card-bg: #7C3AED;">
+            <div class="aparato-card__icon" aria-hidden="true">
+              <i data-lucide="calendar-days" style="width:48px;height:48px;color:white;opacity:0.9;"></i>
+            </div>
+            <div class="aparato-card__content">
+              <h3 class="aparato-card__name">Mi programa semanal</h3>
+              <p class="aparato-card__desc">Planificación completa de la semana</p>
+            </div>
+            <span class="aparato-card__arrow" aria-hidden="true"><i data-lucide="arrow-right"></i></span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         CONSEJO DE EMMA (DESTACADO)
+    =========================== -->
+    <section class="section emma-tip" aria-labelledby="emma-tip-titulo">
+      <div class="container">
+        <div class="emma-tip__card reveal">
+          <div class="emma-tip__avatar" aria-hidden="true">
+            <div class="avatar-placeholder">ER</div>
+          </div>
+          <div class="emma-tip__content">
+            <span class="emma-tip__label">💬 Consejo de Emma</span>
+            <blockquote class="emma-tip__quote" id="emma-tip-titulo">
+              "La constancia es la diferencia entre las que sueñan y las que lo consiguen. Cada entrenamiento cuenta, aunque sea pequeño."
+            </blockquote>
+            <a href="consejos/index.html" class="btn btn--primary btn--sm">
+              Ver todos los consejos
+              <i data-lucide="chevron-right"></i>
+            </a>
+          </div>
+          <div class="emma-tip__deco" aria-hidden="true">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         PREVIEW PROGRAMA SEMANAL
+    =========================== -->
+    <section class="section programa-preview" aria-labelledby="programa-titulo">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">📅 Esta semana</span>
+          <h2 class="section__title" id="programa-titulo">Tu programa de la semana</h2>
+          <p class="section__subtitle">Sigue la planificación de Emma y mejora cada día.</p>
+        </div>
+
+        <div class="programa-preview__grid reveal">
+          <div class="dia-card dia-card--active">
+            <span class="dia-card__dia">Lunes</span>
+            <span class="dia-card__tipo">Suelo</span>
+            <span class="dia-card__duracion"><i data-lucide="clock"></i> 45 min</span>
+          </div>
+          <div class="dia-card">
+            <span class="dia-card__dia">Martes</span>
+            <span class="dia-card__tipo">Físico</span>
+            <span class="dia-card__duracion"><i data-lucide="clock"></i> 30 min</span>
+          </div>
+          <div class="dia-card">
+            <span class="dia-card__dia">Miércoles</span>
+            <span class="dia-card__tipo">Paralelas</span>
+            <span class="dia-card__duracion"><i data-lucide="clock"></i> 45 min</span>
+          </div>
+          <div class="dia-card dia-card--descanso">
+            <span class="dia-card__dia">Jueves</span>
+            <span class="dia-card__tipo">Descanso 💤</span>
+            <span class="dia-card__duracion">Recuperación</span>
+          </div>
+          <div class="dia-card">
+            <span class="dia-card__dia">Viernes</span>
+            <span class="dia-card__tipo">Barra + Salto</span>
+            <span class="dia-card__duracion"><i data-lucide="clock"></i> 60 min</span>
+          </div>
+          <div class="dia-card">
+            <span class="dia-card__dia">Sábado</span>
+            <span class="dia-card__tipo">Flexibilidad</span>
+            <span class="dia-card__duracion"><i data-lucide="clock"></i> 30 min</span>
+          </div>
+          <div class="dia-card dia-card--descanso">
+            <span class="dia-card__dia">Domingo</span>
+            <span class="dia-card__tipo">Descanso 🌟</span>
+            <span class="dia-card__duracion">Recarga energía</span>
+          </div>
+        </div>
+
+        <div class="programa-preview__cta reveal">
+          <a href="programa/index.html" class="btn btn--primary">
+            <i data-lucide="calendar-days"></i>
+            Ver programa completo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         MOTIVACIÓN / BANNER
+    =========================== -->
+    <section class="motivacion-banner" aria-hidden="true">
+      <div class="motivacion-banner__track">
+        <span>🤸 Gimnasia artística</span>
+        <span>✦ Entrena con Emma</span>
+        <span>⭐ Supera tus límites</span>
+        <span>🏅 Cada día más fuerte</span>
+        <span>💜 Pasión por el deporte</span>
+        <span>🤸 Gimnasia artística</span>
+        <span>✦ Entrena con Emma</span>
+        <span>⭐ Supera tus límites</span>
+        <span>🏅 Cada día más fuerte</span>
+        <span>💜 Pasión por el deporte</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===========================
+       FOOTER
+  =========================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero · Gimnasia Artística</span>
+      </div>
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="index.html">Inicio</a>
+        <a href="programa/index.html">Programa</a>
+        <a href="consejos/index.html">Consejos</a>
+      </nav>
+      <p class="footer__copy">© 2025 Emma Romero. Hecho con 💜 para gimnastas.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
