@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Crea tu programa de entrenamiento personalizado con Emma Romero. Dinos cuántos días entrenas y qué quieres mejorar, y generaremos tu plan ideal." />
+  <meta property="og:title" content="Mi programa personalizado · Emma Romero" />
+  <meta property="og:description" content="Genera tu propio plan de entrenamiento adaptado a tus días disponibles y tus objetivos." />
+  <meta property="og:type" content="website" />
+  <title>Mi Programa Personalizado · Emma Romero · Gimnasia Artística</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="../index.html#aparatos">Aparatos</a></li>
+        <li><a href="index.html" style="color: var(--color-primary); font-weight:700;">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="../index.html#aparatos">Aparatos</a></li>
+        <li><a href="index.html">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========================= HERO ========================= -->
+    <section class="prog-hero">
+      <div class="prog-hero__bg" aria-hidden="true">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+      </div>
+      <div class="container">
+        <div class="prog-hero__intro reveal">
+          <nav class="aparato-breadcrumb" aria-label="Migas de pan" style="margin-bottom: var(--space-4);">
+            <a href="../index.html">Inicio</a>
+            <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            <a href="index.html">Programa</a>
+            <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            <span>Mi programa</span>
+          </nav>
+          <span class="section__tag">🎯 Totalmente personalizado</span>
+          <h1 class="prog-hero__title">Crea <span class="hero__title--accent">tu programa</span></h1>
+          <p class="prog-hero__subtitle">Responde 3 preguntas rápidas. Generaremos un plan de entrenamiento semanal adaptado exactamente a ti: tus días, tu nivel y lo que más quieres mejorar.</p>
+          <div class="objetivos-list">
+            <ul>
+              <li><i data-lucide="calendar"></i> Ajustado a tus días</li>
+              <li><i data-lucide="trending-up"></i> Para tu nivel</li>
+              <li><i data-lucide="target"></i> Tus prioridades</li>
+              <li><i data-lucide="refresh-cw"></i> Regenerarlo cuando quieras</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================= WIZARD ========================= -->
+    <section class="section sesion-wrap" id="wizard-section">
+      <div class="container">
+        <div class="prog-wizard">
+
+          <!-- Progress -->
+          <div class="wizard-progress" aria-label="Progreso del cuestionario" role="progressbar">
+            <div class="wizard-progress__step wizard-progress__step--active" id="prog-ind-1">
+              <div class="wizard-progress__circle">1</div>
+              <span>Tu semana</span>
+            </div>
+            <div class="wizard-progress__line" id="line-1-2"></div>
+            <div class="wizard-progress__step" id="prog-ind-2">
+              <div class="wizard-progress__circle">2</div>
+              <span>Tu nivel</span>
+            </div>
+            <div class="wizard-progress__line" id="line-2-3"></div>
+            <div class="wizard-progress__step" id="prog-ind-3">
+              <div class="wizard-progress__circle">3</div>
+              <span>Tus metas</span>
+            </div>
+          </div>
+
+          <!-- ====== PASO 1: Días ====== -->
+          <div class="wizard-step wizard-step--active" id="step-1">
+            <h2 class="wizard-step__title">¿Cuántos días entrenas a la semana?</h2>
+
+            <div class="step-question">
+              <p class="step-question__label">Días en el club (con entrenadora):</p>
+              <div class="num-selector" id="club-selector" role="group" aria-label="Días de entrenamiento en el club">
+                <button class="num-btn" data-val="0" aria-label="0 días en el club">0</button>
+                <button class="num-btn" data-val="1" aria-label="1 día en el club">1</button>
+                <button class="num-btn" data-val="2" aria-label="2 días en el club">2</button>
+                <button class="num-btn" data-val="3" aria-label="3 días en el club">3</button>
+                <button class="num-btn" data-val="4" aria-label="4 días en el club">4</button>
+              </div>
+            </div>
+
+            <div class="step-question">
+              <p class="step-question__label">Días adicionales que puedes entrenar en casa:</p>
+              <div class="num-selector" id="casa-selector" role="group" aria-label="Días de entrenamiento en casa">
+                <button class="num-btn" data-val="1" aria-label="1 día en casa">1</button>
+                <button class="num-btn" data-val="2" aria-label="2 días en casa">2</button>
+                <button class="num-btn" data-val="3" aria-label="3 días en casa">3</button>
+                <button class="num-btn" data-val="4" aria-label="4 días en casa">4</button>
+                <button class="num-btn" data-val="5" aria-label="5 días en casa">5</button>
+              </div>
+            </div>
+
+            <div id="dias-warning" class="form-warning" style="display:none;" role="alert">
+              ⚠️ Suma demasiados días. Deja al menos <strong>1 día de descanso</strong> por semana para que tu cuerpo se recupere.
+            </div>
+
+            <div class="wizard-nav">
+              <span></span>
+              <button class="btn btn--primary" id="btn-step1-next" disabled>
+                Siguiente <i data-lucide="chevron-right"></i>
+              </button>
+            </div>
+          </div><!-- /step-1 -->
+
+
+          <!-- ====== PASO 2: Nivel ====== -->
+          <div class="wizard-step" id="step-2">
+            <h2 class="wizard-step__title">¿Cuál es tu nivel?</h2>
+            <p class="step-subtitle">Sé honesta contigo misma: el programa funcionará mejor si el nivel es el correcto.</p>
+
+            <div class="level-grid" role="group" aria-label="Selecciona tu nivel">
+              <button class="level-card" data-val="basico" type="button">
+                <span class="level-card__emoji">🌱</span>
+                <span class="level-card__name">Principiante</span>
+                <span class="level-card__desc">Llevo menos de 1 año, estoy aprendiendo elementos básicos: rodadas, medias lunas, arabesco…</span>
+              </button>
+              <button class="level-card" data-val="intermedio" type="button">
+                <span class="level-card__emoji">⭐</span>
+                <span class="level-card__name">Intermedia</span>
+                <span class="level-card__desc">Entre 1 y 3 años. Hago rondada, pino en pared, kip básico, espagat casi completo…</span>
+              </button>
+              <button class="level-card" data-val="avanzado" type="button">
+                <span class="level-card__emoji">🏅</span>
+                <span class="level-card__name">Avanzada</span>
+                <span class="level-card__desc">Más de 3 años. Flic-flac, elementos de competición, pino libre, espagat completo…</span>
+              </button>
+            </div>
+
+            <div class="wizard-nav">
+              <button class="btn btn--secondary" id="btn-step2-back" type="button">
+                <i data-lucide="chevron-left"></i> Atrás
+              </button>
+              <button class="btn btn--primary" id="btn-step2-next" disabled type="button">
+                Siguiente <i data-lucide="chevron-right"></i>
+              </button>
+            </div>
+          </div><!-- /step-2 -->
+
+
+          <!-- ====== PASO 3: Prioridades ====== -->
+          <div class="wizard-step" id="step-3">
+            <h2 class="wizard-step__title">¿Qué quieres mejorar?</h2>
+            <p class="step-subtitle">Elige entre 1 y 3 áreas. El programa priorizará esas zonas cada semana.</p>
+
+            <div class="priority-grid" id="priority-grid" role="group" aria-label="Selecciona tus prioridades (máximo 3)">
+              <button class="priority-card" data-val="suelo"
+                style="--pc-color:#F43F5E; --pc-bg:#FFF1F2;" type="button">
+                <span class="priority-card__emoji">🤸</span>
+                <span class="priority-card__name">Suelo</span>
+              </button>
+              <button class="priority-card" data-val="barra"
+                style="--pc-color:#7C3AED; --pc-bg:#F5F3FF;" type="button">
+                <span class="priority-card__emoji">⚖️</span>
+                <span class="priority-card__name">Barra</span>
+              </button>
+              <button class="priority-card" data-val="paralelas"
+                style="--pc-color:#0EA5E9; --pc-bg:#F0F9FF;" type="button">
+                <span class="priority-card__emoji">⚡</span>
+                <span class="priority-card__name">Paralelas</span>
+              </button>
+              <button class="priority-card" data-val="salto"
+                style="--pc-color:#F59E0B; --pc-bg:#FFFBEB;" type="button">
+                <span class="priority-card__emoji">🚀</span>
+                <span class="priority-card__name">Salto / Plinto</span>
+              </button>
+              <button class="priority-card" data-val="fuerza"
+                style="--pc-color:#10B981; --pc-bg:#ECFDF5;" type="button">
+                <span class="priority-card__emoji">💪</span>
+                <span class="priority-card__name">Fuerza y físico</span>
+              </button>
+              <button class="priority-card" data-val="flexibilidad"
+                style="--pc-color:#EC4899; --pc-bg:#FDF2F8;" type="button">
+                <span class="priority-card__emoji">🧘</span>
+                <span class="priority-card__name">Flexibilidad</span>
+              </button>
+            </div>
+
+            <p class="priority-counter">
+              <span id="priority-count">0</span>/3 áreas seleccionadas
+            </p>
+
+            <div class="wizard-nav">
+              <button class="btn btn--secondary" id="btn-step3-back" type="button">
+                <i data-lucide="chevron-left"></i> Atrás
+              </button>
+              <button class="btn btn--primary" id="btn-generate" disabled type="button">
+                🎯 Generar mi programa
+              </button>
+            </div>
+          </div><!-- /step-3 -->
+
+        </div><!-- /prog-wizard -->
+      </div>
+    </section><!-- /wizard-section -->
+
+
+    <!-- ========================= RESULTADO ========================= -->
+    <div id="result-section" style="display:none;">
+
+      <!-- Summary banner -->
+      <section class="section sesion-wrap">
+        <div class="container">
+
+          <div class="result-header">
+            <div>
+              <h2 class="result-header__title">Tu programa personalizado ✦</h2>
+              <p id="result-summary" class="result-header__summary"></p>
+            </div>
+            <div class="result-header__actions">
+              <button class="btn btn--secondary btn--sm" id="btn-edit" type="button">
+                <i data-lucide="edit-3"></i> Modificar
+              </button>
+              <button class="btn btn--primary btn--sm" id="btn-regenerate" type="button">
+                <i data-lucide="refresh-cw"></i> Regenerar
+              </button>
+            </div>
+          </div>
+
+          <!-- Semana resumen -->
+          <div class="semana-grid" id="result-week-grid"></div>
+
+        </div>
+      </section>
+
+      <!-- Sesiones generadas -->
+      <div id="result-sessions"></div>
+
+      <!-- Nota de Emma -->
+      <section class="section sesion-wrap">
+        <div class="container">
+          <div class="result-emma-note">
+            <div class="result-emma-note__avatar" aria-hidden="true">ER</div>
+            <div>
+              <p>"Este programa complementa tu entrenamiento en el club. Si un día te noto cansada o algo no sale, lo ajustamos. Lo importante es que aparezcas: los resultados vienen de la constancia, no de la perfección."</p>
+              <span>— Emma Romero</span>
+            </div>
+          </div>
+          <div style="text-align:center; margin-top: var(--space-10);">
+            <button class="btn btn--secondary" id="btn-restart" type="button">
+              Crear un programa nuevo
+            </button>
+            <a href="index.html" class="btn btn--ghost" style="margin-left: var(--space-3);">
+              Ver programa fijo de Emma
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /result-section -->
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero · Gimnasia Artística</span>
+      </div>
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="../index.html">Inicio</a>
+        <a href="index.html">Programa</a>
+        <a href="../consejos/index.html">Consejos</a>
+      </nav>
+      <p class="footer__copy">© 2025 Emma Romero. Hecho con 💜 para gimnastas.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+  /* ============================================================
+     MI PROGRAMA — Generador personalizado
+     Base de datos de ejercicios + algoritmo de generación
+  ============================================================ */
+
+  // ── CONFIGURACIÓN DE ÁREAS ──────────────────────────────────
+  const AREA_META = {
+    suelo:        { nombre: 'Suelo',              emoji: '🤸', bloqueClass: 'bloque--pino',      sesionClass: 'sesion-header--rose',   color: '#F43F5E' },
+    barra:        { nombre: 'Barra de equilibrio',emoji: '⚖️', bloqueClass: 'bloque--equilibrio', sesionClass: 'sesion-header--sky',    color: '#0EA5E9' },
+    paralelas:    { nombre: 'Paralelas',           emoji: '⚡', bloqueClass: 'bloque--lsit',       sesionClass: '',                      color: '#7C3AED' },
+    salto:        { nombre: 'Salto / Plinto',      emoji: '🚀', bloqueClass: 'bloque--saltos',     sesionClass: 'sesion-header--amber',  color: '#F59E0B' },
+    fuerza:       { nombre: 'Fuerza y físico',     emoji: '💪', bloqueClass: 'bloque--core',       sesionClass: 'sesion-header--green',  color: '#10B981' },
+    flexibilidad: { nombre: 'Flexibilidad',        emoji: '🧘', bloqueClass: 'bloque--espagat',    sesionClass: 'sesion-header--rose',   color: '#EC4899' },
+  };
+
+  const DIAS_SEMANA = ['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
+
+  // ── BASE DE DATOS DE EJERCICIOS ─────────────────────────────
+  // Formato: { emoji, nombre, reps, desc, tip }
+  const DB = {
+    suelo: {
+      basico: [
+        { emoji:'🔄', nombre:'Rodada adelante', reps:'3 × 5 rep', desc:'Posición de bola, empuja el suelo, cuello protegido. Termina de pie con los brazos arriba.', tip:'Mira el ombligo al rodar: así proteges el cuello y controlas la velocidad.' },
+        { emoji:'🌙', nombre:'Media luna', reps:'3 × 8 rep', desc:'Pasando por vertical, brazos activos, piernas estiradas. Pie de salida y de llegada alineados.', tip:'La media luna va hacia arriba, no de lado. Imagina un arco de círculo sobre tu cabeza.' },
+        { emoji:'🦢', nombre:'Arabesco estático', reps:'3 × 15 seg / pierna', desc:'Pie de apoyo firme, pierna elevada a 90° mínimo, brazos extendidos, mirada al frente.', tip:'Aprieta el glúteo del pie de apoyo: eso te da el 70% de la estabilidad.' },
+        { emoji:'⭐', nombre:'Salto con extensión total', reps:'3 × 10 rep', desc:'Salto vertical con cuerpo completamente extendido en el punto más alto. Punta de pie.', tip:'Empuja el suelo como si quisieras atravesarlo. El impulso viene de tobillos, no solo rodillas.' },
+        { emoji:'🔙', nombre:'Rodada atrás', reps:'3 × 5 rep', desc:'Desde sentada, rueda atrás pasando por vertical. Manos al lado de la cabeza para proteger el cuello.', tip:'Las manos llegan al suelo antes de que la cabeza lo haga. Eso es lo más importante.' },
+        { emoji:'🌟', nombre:'Posición de estrella', reps:'3 × 8 rep', desc:'Salto abriendo brazos y piernas en estrella en el punto más alto. Tensión total en el aire.', tip:'Los brazos y las piernas suben a la vez. Si van desfasados, la posición pierde puntos.' },
+      ],
+      intermedio: [
+        { emoji:'🎯', nombre:'Rondada', reps:'3 × 6 rep', desc:'Media luna con cuarto de giro al aterrizar. Las piernas se juntan en el aire y terminas de espaldas.', tip:'Las manos van en línea recta en el suelo, no cruzadas. Ese detalle lo cambia todo.' },
+        { emoji:'💫', nombre:'Pirouette (giro)', reps:'3 × 5 rep / lado', desc:'Giro de 360° en punta. Los brazos pasan por primera posición, el "spot" (clavar la mirada) es clave.', tip:'El "spot" es clave: mantén la mirada en un punto fijo y gira el cuello rápido al final del giro.' },
+        { emoji:'🦁', nombre:'Grand jeté', reps:'3 × 5 rep', desc:'Gran salto con piernas completamente extendidas y separadas. La pierna delantera va activa hacia arriba.', tip:'La pierna delantera va activa hacia arriba. No esperes que suba sola: la mandas tú.' },
+        { emoji:'🌉', nombre:'Puente de pie a pie', reps:'3 × 5 rep', desc:'Desde de pie, arqueamiento atrás hasta tocar el suelo con las manos, luego volver de pie.', tip:'Mira tus manos al bajar. Cuando veas el suelo, empuja con los hombros para no caerte hacia adelante.' },
+        { emoji:'🔗', nombre:'Rondada + salto', reps:'3 × 5 series', desc:'Rondada seguida inmediatamente de un salto con extensión. La rondada da impulso al salto.', tip:'El salto va en la dirección de la rondada. No pierdas velocidad entre los dos elementos.' },
+        { emoji:'🎭', nombre:'Secuencia acrobática básica', reps:'2 × secuencia', desc:'Rodada + media luna + arabesco + salto. Practica la conexión fluida entre elementos.', tip:'Entre elementos no hay pausa. La gimnasia de suelo es una historia continua, no ejercicios sueltos.' },
+      ],
+      avanzado: [
+        { emoji:'⚡', nombre:'Rondada + flic-flac', reps:'3 × 4 rep', desc:'Rondada seguida inmediatamente de un back handspring. La rondada da el impulso al flic.', tip:'La transición es inmediata: los pies de la rondada dan el impulso para el flic sin pausa.' },
+        { emoji:'🌪️', nombre:'Doble giro en punta', reps:'3 × 5 rep', desc:'720° sobre el eje vertical. Los brazos y el centro activo crean la velocidad de giro.', tip:'El segundo giro empieza antes de completar el primero. Es "seguir girando", no hacer dos giros.' },
+        { emoji:'🦌', nombre:'Salto de ciervo', reps:'3 × 5 rep', desc:'Una rodilla al pecho, la otra pierna extendida atrás. La posición dura solo un instante.', tip:'La nitidez de la posición es lo que puntúa, no cuánto dura. Sé instantáneamente perfecta.' },
+        { emoji:'🌊', nombre:'Serie acrobática (rondada + doble flic)', reps:'2 × serie', desc:'Rondada + flic-flac + flic-flac. La velocidad aumenta elemento a elemento.', tip:'Si pierdes velocidad en la serie, algo falló antes. La serie vive o muere en la rondada.' },
+        { emoji:'🎪', nombre:'Media luna aérea', reps:'3 × 5 rep (asistida)', desc:'Media luna sin apoyar las manos. Solo con la ayuda del entrenador hasta dominar la técnica.', tip:'La media luna aérea es una media luna normal pero sin manos. El impulso de cadera es el mismo.' },
+        { emoji:'🏆', nombre:'Coreografía completa', reps:'2 × rutina', desc:'Practica tu rutina entera: entrada, serie acrobática, saltos y series coreográficas sin parar.', tip:'Practica la rutina completa aunque un elemento falle. En competición no hay pausa.' },
+      ],
+    },
+
+    barra: {
+      basico: [
+        { emoji:'🚶', nombre:'Caminar en línea recta', reps:'5 × largo de la barra', desc:'Caminar sobre la barra mirando al frente. Punta de pie al pisar, brazos en segunda posición.', tip:'Mira un punto fijo al frente, no tus pies. El cerebro equilibra mejor con referencia externa.' },
+        { emoji:'🩰', nombre:'Relevé sostenido', reps:'3 × 20 seg', desc:'Subir a punta de pie y mantener el equilibrio. Rodillas estiradas, glúteos activos, core tenso.', tip:'Empuja el suelo con la punta como si lo atravesaras. Esa tensión activa da estabilidad.' },
+        { emoji:'🦢', nombre:'Arabesco en barra', reps:'3 × 15 seg / pierna', desc:'Arabesco sobre la barra: pierna elevada a 90°, torso estable, brazos extendidos.', tip:'La barra es inestable: usa el core al 100%. Piensa en "tensión de pies a cabeza".' },
+        { emoji:'⬆️', nombre:'Monte a la barra', reps:'3 × 8 rep', desc:'Subir a la barra desde el suelo en un solo movimiento limpio. El impulso viene del salto.', tip:'Lleva las caderas directamente encima de la barra. No arrastres el cuerpo.' },
+        { emoji:'↔️', nombre:'Cambio de pie en barra', reps:'3 × 10 rep', desc:'Pasar el peso de un pie al otro sobre la barra manteniendo el equilibrio constante.', tip:'El cambio es suave, como en el suelo. No te quedes rígida: fluidez y control a la vez.' },
+        { emoji:'🎯', nombre:'Giro de 180° en punta', reps:'3 × 6 rep', desc:'Media vuelta sobre la barra sobre una sola pierna en punta, terminando mirando el otro lado.', tip:'El giro sale de la cadera, no de los hombros. Inicia la rotación desde abajo.' },
+      ],
+      intermedio: [
+        { emoji:'🏃', nombre:'Chassé en barra', reps:'3 × largo de la barra', desc:'Desplazamiento fluido en barra con transferencia de peso. El cuerpo fluye, no da pasos bruscos.', tip:'El chassé es un "desliz": imagina que el suelo bajo tus pies se mueve suave.' },
+        { emoji:'🌙', nombre:'Media luna en barra', reps:'3 × 5 rep / lado', desc:'Media luna sobre la barra con total control. Más lento que en el suelo, cada apoyo consciente.', tip:'Cada apoyo de mano requiere un instante de "clic" de atención. No la hagas en automático.' },
+        { emoji:'🔄', nombre:'Giro completo de pie (360°)', reps:'3 × 5 rep', desc:'Giro completo en punta sobre la barra. El spot (fijar la mirada) hace posible el giro.', tip:'Sin spot, el giro completo es imposible. Clava la mirada en un punto y busca ese punto al girar.' },
+        { emoji:'🤸', nombre:'Salto en barra con extensión', reps:'3 × 6 rep', desc:'Salto desde la barra con extensión completa del cuerpo y aterrizaje controlado de pie.', tip:'El aterrizaje puntúa tanto como el salto. Piernas juntas, brazos arriba, sin tambalearte.' },
+        { emoji:'🔙', nombre:'Arabesco + paso adelante', reps:'3 × 8 rep', desc:'Arabesco mantenido seguido de paso adelante sin perder el equilibrio. Combo de fluidez.', tip:'El paso desde el arabesco es la parte más difícil. Ensaya el momento de transición por separado.' },
+        { emoji:'🌟', nombre:'Serie coreográfica de barra', reps:'2 × serie', desc:'Chassé + giro + arabesco + salto. Practica la conexión entre todos los elementos.', tip:'En la barra el tiempo entre elementos también cuenta. Los jueces ven el conjunto, no los ejercicios sueltos.' },
+      ],
+      avanzado: [
+        { emoji:'🔙', nombre:'Back walkover en barra', reps:'3 × 4 rep', desc:'Walkover atrás sobre la barra. El elemento de mayor dificultad de este aparato.', tip:'Domina el back walkover en el suelo perfectamente antes de subirlo a la barra.' },
+        { emoji:'🌀', nombre:'Giro de 360° con cambio de pierna', reps:'3 × 4 rep', desc:'Giro completo sobre la barra cambiando de pierna de apoyo durante el giro.', tip:'El cambio de pierna se produce exactamente a mitad del giro. La sincronización es milimétrica.' },
+        { emoji:'🤸', nombre:'Desmontaje rondada', reps:'3 × 5 rep', desc:'Saltar de la barra ejecutando una rondada limpia para el desmontaje final.', tip:'El desmontaje debe ser poderoso y limpio. No importa solo bajarse: importa cómo llegas al suelo.' },
+        { emoji:'🏋️', nombre:'Front aerial en barra', reps:'3 × 4 rep (asistida)', desc:'Media luna sin manos sobre la barra de equilibrio. Solo con ayuda del entrenador.', tip:'La dificultad del aerial en barra está en no poder buscar el suelo con las manos. La confianza es todo.' },
+        { emoji:'💫', nombre:'Secuencia de giros', reps:'3 × secuencia', desc:'Giro 180° + paso + giro 360° + arabesco + salto. Trabaja la fluidez completa.', tip:'Si un giro falla, no pares: continúa y mejóralo en la siguiente repetición.' },
+        { emoji:'🎭', nombre:'Rutina completa de barra', reps:'2 × rutina', desc:'Monte + desplazamientos + giro + acrobacia + desmontaje en secuencia fluida sin pausas.', tip:'Una rutina de barra es una historia. Cada elemento conecta con el siguiente.' },
+      ],
+    },
+
+    paralelas: {
+      basico: [
+        { emoji:'💪', nombre:'Colgado activo', reps:'3 × 20 seg', desc:'Colgada de la barra con hombros activos: empújalos hacia abajo, alejándolos de las orejas.', tip:'Hombros activos es el estado base de todas las paralelas. Sin eso, el resto no funciona.' },
+        { emoji:'🔄', nombre:'Swing (balanceo) controlado', reps:'3 × 10 ciclos', desc:'Balanceo con cuerpo alineado: hollow adelante, arch atrás. Ritmo constante sin perder la forma.', tip:'El balanceo viene de las caderas, no de las piernas solas. Las piernas solo prolongan el movimiento.' },
+        { emoji:'⬆️', nombre:'Dominadas asistidas', reps:'3 × 5 rep', desc:'Tirar del cuerpo hacia la barra con ayuda de elástico o pies apoyados. La barbilla pasa la barra.', tip:'Baja en 3-4 segundos. Bajar lento construye más fuerza que subir rápido.' },
+        { emoji:'🚀', nombre:'Salida de vuelo básica', reps:'3 × 5 rep', desc:'Desde la barra baja, impulso para soltar la barra y aterrizar de pie controlado.', tip:'Aprieta la barra hasta el último segundo. Soltarla antes quita potencia y control.' },
+        { emoji:'🔁', nombre:'Transferencia barra baja a alta', reps:'3 × 5 rep', desc:'Desde la barra baja, coger la barra alta con una o dos manos.', tip:'Mira la barra alta antes de soltarte de la baja. Si la buscas con los ojos en el aire, la encuentras.' },
+        { emoji:'📐', nombre:'Pike hold colgada', reps:'3 × 10 seg', desc:'Colgada de la barra, llevar las piernas paralelas al suelo y aguantar. Core al máximo.', tip:'El pike hold requiere comprimir la cadera. Imagina que acercas el ombligo a los muslos.' },
+      ],
+      intermedio: [
+        { emoji:'🔁', nombre:'Kip básico', reps:'3 × 5 rep', desc:'Desde colgado, pies a la barra, empujar y terminar en apoyo. El movimiento fundamental.', tip:'El kip es una ola: primero los pies suben, luego las caderas "encajan" sobre la barra.' },
+        { emoji:'⭕', nombre:'Círculo de cadera adelante', reps:'3 × 5 rep', desc:'En apoyo sobre la barra, girar hacia adelante manteniendo las caderas pegadas a ella.', tip:'Las caderas son el pivote: si las separas de la barra aunque sea un centímetro, el círculo falla.' },
+        { emoji:'📐', nombre:'Castaña en barra baja', reps:'3 × 5 rep', desc:'Desde apoyo, llevar piernas juntas y estiradas hasta la horizontal hacia adelante.', tip:'Las piernas suben desde el core, no jalando con las caderas. Aplana la zona lumbar.' },
+        { emoji:'🔄', nombre:'Cambio de barra con impulso', reps:'3 × 5 rep', desc:'Desde la barra baja, soltar y coger la barra alta con impulso del swing.', tip:'El impulso del swing te lleva a la barra alta. No es un salto: es aprovechar la energía del balanceo.' },
+        { emoji:'🌀', nombre:'Círculo de cadera atrás', reps:'3 × 4 rep', desc:'Girar alrededor de la barra hacia atrás desde el apoyo. Las caderas nunca se despegan.', tip:'Hacia atrás es más difícil que adelante porque no ves a dónde vas. Cuenta la rotación en tu cabeza.' },
+        { emoji:'🔗', nombre:'Serie kip + castaña', reps:'3 × serie', desc:'Kip para subir a la barra + castaña + vuelta a colgado. La serie más clásica de paralelas.', tip:'La castaña después del kip llega cuando aún tienes velocidad del kip. No lo hagas lento.' },
+      ],
+      avanzado: [
+        { emoji:'🎯', nombre:'Castaña a vertical', reps:'3 × 4 rep', desc:'Castaña que llega hasta el pino por encima de la barra. El elemento rey de paralelas asimétricas.', tip:'Sin core máximo desde el inicio, la castaña no llega a vertical. Es lo que más diferencia niveles.' },
+        { emoji:'🌍', nombre:'Sole circle', reps:'3 × 4 rep', desc:'Giro completo alrededor de la barra con los pies en ella. Cuerpo en L durante todo el giro.', tip:'La posición en L es lo que hace girar el cuerpo. Perder la L es perder el control del giro.' },
+        { emoji:'✈️', nombre:'Flyaway (desmontaje)', reps:'3 × 5 rep', desc:'Desde el balanceo máximo hacia atrás, soltar la barra y caer de pie. Desmontaje clásico.', tip:'El flyaway se suelta en el punto más alto del balanceo, donde casi no hay velocidad. No antes.' },
+        { emoji:'🌀', nombre:'Doble kip', reps:'3 × 4 rep', desc:'Kip desde la barra alta, cambio a la barra baja, kip desde la baja a la alta. Todo encadenado.', tip:'El timing del segundo kip depende del momentum del primero. Si el primero va mal, el segundo no llega.' },
+        { emoji:'💪', nombre:'Muscle-up en barra', reps:'3 × 3 rep', desc:'Desde colgado, tirar + empujar para terminar en apoyo encima de la barra. La transición es el punto clave.', tip:'La transición codo-apoyo es lo más difícil. Practica esa fase específica por separado con ayuda.' },
+        { emoji:'🎭', nombre:'Rutina completa de barras', reps:'2 × rutina', desc:'Subida + kip + castaña + giro + cambio + flyaway. Secuencia fluida sin pausas.', tip:'El flyaway de desmontaje puede salvar una rutina con errores. Siempre practica el final.' },
+      ],
+    },
+
+    salto: {
+      basico: [
+        { emoji:'🏃', nombre:'Carrera de aproximación', reps:'5 × carrera completa', desc:'Carrera en línea recta con aceleración progresiva. Los últimos 3 pasos son cortos y rápidos.', tip:'Los últimos pasos son más cortos y rápidos, no más largos. Preparan el salto, no lo ejecutan.' },
+        { emoji:'🦘', nombre:'Batida y hurdle', reps:'3 × 10 rep', desc:'Salto con un pie y aterrizaje simultáneo en ambos pies justo antes del plinto. Es la "preparación".', tip:'La batida no sube: va hacia el plinto. Un ángulo demasiado vertical pierde velocidad horizontal.' },
+        { emoji:'📦', nombre:'Box jumps', reps:'3 × 8 rep', desc:'Saltos sobre cajón con ambos pies, aterrizaje amortiguado desde las puntas. Construye potencia.', tip:'Al aterrizar, las rodillas van hacia adelante sobre los pies, no se cierran hacia dentro.' },
+        { emoji:'🤲', nombre:'Apoyo de manos en plinto', reps:'3 × 8 rep', desc:'Batida + apoyo de manos en el plinto + bloqueo de hombros. Sin saltar todavía.', tip:'Los brazos se bloquean al contacto: completamente extendidos, empujando el plinto activamente.' },
+        { emoji:'🎯', nombre:'Aterrizaje limpio', reps:'3 × 10 rep', desc:'Desde una pequeña altura, aterrizar con rodillas semiflexionadas, equilibrio y brazos arriba.', tip:'Un aterrizaje limpio tiene 3 partes: tocar, amortiguar y equilibrar. Las tres cuentan para los jueces.' },
+        { emoji:'⚡', nombre:'Saltos pliométricos', reps:'3 × 10 rep', desc:'Saltos continuos lo más explosivos posible tocando el suelo el mínimo tiempo.', tip:'El tiempo de contacto con el suelo debe ser mínimo: saltar, no rebotar. Es la diferencia.' },
+      ],
+      intermedio: [
+        { emoji:'🔒', nombre:'Bloqueo de hombros en inclinada', reps:'3 × 8 rep', desc:'Apoyo de manos con bloqueo completo de hombros sobre superficie inclinada.', tip:'El bloqueo dura una fracción de segundo. Es un push explosivo, no un apoyo pasivo. Diferencia enorme.' },
+        { emoji:'🤸', nombre:'Straddle vault básico', reps:'3 × 5 rep', desc:'Salto sobre el plinto con piernas abiertas en el punto más alto. Manos tocan brevemente el plinto.', tip:'Las piernas se abren después del bloqueo, no antes. Primero el impulso, luego la apertura.' },
+        { emoji:'⚡', nombre:'Sprints de aceleración', reps:'6 × 20 metros', desc:'Carreras cortas de máxima velocidad para entrenar la explosividad de la carrera de salto.', tip:'La velocidad de carrera es el 50% del elemento. No se puede saltar bien desde una carrera mediocre.' },
+        { emoji:'🌀', nombre:'Handspring en colchoneta inclinada', reps:'3 × 5 rep', desc:'Handspring sobre colchoneta inclinada que facilita el giro. Progresión hacia el handspring real.', tip:'La inclinación ayuda pero no reemplaza la técnica. Mantén el bloqueo de hombros aunque sea más fácil.' },
+        { emoji:'📐', nombre:'Medición y marca de carrera', reps:'3 × medición', desc:'Medir y marcar el punto de inicio exacto para que la batida caiga siempre en el mismo lugar.', tip:'En competición el punto de inicio es siempre el mismo. El salto empieza antes de correr.' },
+        { emoji:'💪', nombre:'Potencia de batida (saltos con obstáculo)', reps:'3 × 8 rep', desc:'Saltos por encima de un obstáculo bajo usando solo la batida. Entrena la explosividad específica.', tip:'La potencia de la batida viene de la velocidad de la carrera más la fuerza de tobillos. Entrena ambas.' },
+      ],
+      avanzado: [
+        { emoji:'🌠', nombre:'Handspring sobre plinto', reps:'3 × 5 rep', desc:'Handspring completo sobre el plinto con extensión total del cuerpo antes de caer.', tip:'La extensión dura solo un instante. Busca la vertical completa antes de arquear para caer.' },
+        { emoji:'🌪️', nombre:'Handspring con ½ giro', reps:'3 × 4 rep', desc:'Handspring con medio giro longitudinal. Aterrizas de espaldas al plinto.', tip:'El giro empieza con los hombros al salir del plinto, no en el aire. Si giras tarde, perderás el equilibrio.' },
+        { emoji:'🎯', nombre:'Tsukahara básico (asistido)', reps:'3 × 3 rep', desc:'Medio giro de entrada + salto de cabeza de salida. Solo con entrenador y colchoneta de caída.', tip:'El Tsukahara es un elemento de competición. Solo con entrenador y colchoneta específica.' },
+        { emoji:'🏋️', nombre:'Circuito de potencia específica', reps:'2 × circuito', desc:'Sprints + box jumps + batidas + jump squats sin descanso. Potencia bajo fatiga.', tip:'La potencia bajo fatiga es lo que cuenta en el cuarto elemento de una competición. Entrénala.' },
+        { emoji:'📹', nombre:'Análisis de vídeo del salto', reps:'3 × análisis', desc:'Graba tu salto y analiza: carrera, batida, bloqueo, vuelo y aterrizaje. 5 fases, 5 puntos de mejora.', tip:'Ver tu propio salto en vídeo te da información que no puedes sentir desde dentro. Grábate siempre.' },
+        { emoji:'🏆', nombre:'Simulación de competición', reps:'3 × intento oficial', desc:'Un solo intento como en competición: carrera desde la marca, salto completo, sin repetir.', tip:'En competición solo tienes un intento. Practica la presión de hacerlo a la primera.' },
+      ],
+    },
+
+    fuerza: {
+      basico: [
+        { emoji:'🪨', nombre:'Hollow body hold', reps:'3 × 20 seg', desc:'Boca arriba, espalda pegada al suelo, brazos y piernas elevados. El ejercicio de core más importante de la gimnasia.', tip:'Si se despega la espalda del suelo, sube un poco las piernas. La espalda pegada es obligatoria.' },
+        { emoji:'🦸', nombre:'Arch hold (superman)', reps:'3 × 15 seg', desc:'Boca abajo, levanta brazos, pecho y piernas simultáneamente. Glúteos apretados, mira al suelo.', tip:'Complementa el hollow: necesitas los dos para ser una gimnasta completa.' },
+        { emoji:'🤜', nombre:'Flexiones de gimnasta', reps:'3 × 8 rep', desc:'Manos giradas hacia fuera, codos pegados al cuerpo al bajar. Activación específica para aparatos.', tip:'Los codos deben rozar las costillas al bajar. Ese detalle activa los tríceps y dorsales clave.' },
+        { emoji:'📐', nombre:'V-sit sostenido', reps:'3 × 10 seg', desc:'Sentada, piernas juntas en L hacia arriba, manos al lado apoyando lo mínimo posible.', tip:'Empuja los muslos hacia la cara para la compresión de cadera. Es el L-sit de las que empiezan.' },
+        { emoji:'⬆️', nombre:'Sentadillas en punta de pie', reps:'3 × 12 rep', desc:'Sentadillas completas subiendo a punta de pie al final de cada repetición. Fuerza de tobillo y pierna.', tip:'En el punto más alto, aprieta los glúteos con fuerza. El empuje final es lo que construye el salto.' },
+        { emoji:'🏋️', nombre:'Plancha frontal', reps:'3 × 20 seg', desc:'Apoyada en antebrazos y puntas de pie. Cuerpo en línea recta, glúteos activos.', tip:'Aprieta el suelo con los codos como si quisieras alejarte de él. Ese empuje activa todo el core.' },
+      ],
+      intermedio: [
+        { emoji:'🦵', nombre:'Elevaciones de piernas colgada', reps:'3 × 10 rep', desc:'Colgada de barra, piernas juntas y estiradas hasta la horizontal o más. Baja lento y controlado.', tip:'Bajar lento activa tanto como subir. La gravedad también entrena: no desperdicies la bajada.' },
+        { emoji:'⬆️', nombre:'Dominadas estrictas', reps:'3 × 5 rep', desc:'Brazos completamente extendidos al inicio, sin balanceo, barbilla supera la barra.', tip:'Baja en 3-4 segundos. La bajada lenta es donde se construye la fuerza real, no la subida.' },
+        { emoji:'💎', nombre:'Pseudo planche push-ups', reps:'3 × 6 rep', desc:'Flexiones con manos a la altura de la cadera y cuerpo inclinado hacia adelante. Hombros específicos.', tip:'Cuanto más inclinado el cuerpo hacia adelante, más difícil. Empieza suave y progresa lentamente.' },
+        { emoji:'🧲', nombre:'Pike holds en paralelas', reps:'3 × 12 seg', desc:'En paralelas (o sillas), mantener el cuerpo en L. Compresión máxima de cadera y core.', tip:'Empuja las paralelas activamente hacia abajo. No es aguantar: es empujar. La diferencia se nota.' },
+        { emoji:'🌟', nombre:'Colgada con rodillas al pecho', reps:'3 × 8 rep', desc:'Colgada de barra, llevar rodillas al pecho y aguantar 3 segundos. Progresión hacia L-sit colgada.', tip:'La fase de aguantar (3 segundos) es más valiosa que la subida. Añade isometría al ejercicio.' },
+        { emoji:'🔄', nombre:'Circuito de fuerza', reps:'2 × circuito', desc:'Hollow hold 20 seg + arch hold 15 seg + flexiones 8 rep + V-sit 10 seg. Sin descanso entre ejercicios.', tip:'El circuito sin pausas simula las condiciones de la rutina de competición. Fuerza bajo fatiga.' },
+      ],
+      avanzado: [
+        { emoji:'📐', nombre:'L-sit completo sostenido', reps:'3 × 15 seg', desc:'Piernas completamente estiradas a 90° con el cuerpo elevado. Sin apoyo de pies.', tip:'El L-sit requiere meses de trabajo de compresión de cadera. Empieza con rodillas dobladas.' },
+        { emoji:'🏋️', nombre:'Muscle-up en barra', reps:'3 × 3 rep', desc:'Desde colgado, tirar + empujar para terminar en apoyo encima de la barra.', tip:'La transición codo-apoyo es el 80% del ejercicio. Practica esa fase por separado con ayuda.' },
+        { emoji:'🦅', nombre:'Straddle planche (progresión)', reps:'3 × 5 seg', desc:'Cuerpo horizontal con piernas abiertas, apoyada solo en las manos. Progresión de planche.', tip:'La planche llega solo después de meses de pseudo planche. No se pueden acelerar los procesos.' },
+        { emoji:'⬆️', nombre:'Dominadas con lastre o archer', reps:'3 × 4 rep', desc:'Dominadas con un brazo más activo que el otro (archer) para aumentar la dificultad.', tip:'Las dominadas archer son el puente entre dominadas normales y dominadas a un brazo.' },
+        { emoji:'🎯', nombre:'Pino libre 30 seg', reps:'3 × máx (objetivo 30 seg)', desc:'Pino libre sin pared, completamente estable. El ejercicio más importante de la gimnasia artística.', tip:'El pino es LA habilidad más importante. Si tu pino es perfecto, todo lo demás mejora automáticamente.' },
+        { emoji:'🔄', nombre:'Circuito avanzado sin descanso', reps:'2 × circuito', desc:'L-sit + muscle-up + pino + elevaciones + pike holds. Resistencia de fuerza bajo fatiga total.', tip:'La capacidad de mantener la fuerza bajo fatiga es lo que diferencia a las gimnastas de competición.' },
+      ],
+    },
+
+    flexibilidad: {
+      basico: [
+        { emoji:'🌟', nombre:'Espagat frontal (progresión)', reps:'3 × 30 seg / pierna', desc:'Semi-espagat avanzando lentamente. Sin rebotes. Caderas cuadradas al frente.', tip:'Las caderas cuadradas son lo más importante. Si un lado sube, no es espagat real.' },
+        { emoji:'🌊', nombre:'Puente básico', reps:'3 × 20 seg', desc:'Boca arriba, manos junto a las orejas, empujar para arquear la columna. Brazos activos.', tip:'Empuja el suelo con las manos activamente, no solo subas las caderas. Los brazos activos dan el arco.' },
+        { emoji:'🦋', nombre:'Hombros con pica', reps:'3 × 20 seg', desc:'De rodillas con manos sobre una silla o barra, cadera sobre rodillas. Los hombros empujan hacia abajo.', tip:'El peso propio estira mejor que forzar. Relaja y deja que la gravedad trabaje sola.' },
+        { emoji:'🔄', nombre:'Balanceos de pierna', reps:'3 × 10 rep / pierna', desc:'De pie apoyada en la pared, balancear la pierna adelante, atrás y lateral progresivamente más alto.', tip:'El balanceo es fluido, no reboteado. La pierna sube con control muscular activo.' },
+        { emoji:'🧘', nombre:'Postura del niño (child pose)', reps:'3 × 30 seg', desc:'Sentada sobre los talones, estirar los brazos al frente en el suelo. Columna y caderas.', tip:'Con cada espiración, intenta bajar los hombros un poco más. La relajación progresiva es la técnica.' },
+        { emoji:'🌈', nombre:'Apertura lateral de caderas', reps:'3 × 20 seg / lado', desc:'De pie, un pie apoyado en una barra lateral. Mantenerse con el torso erguido.', tip:'El torso permanece erguido: si te inclinas hacia la pierna de apoyo, pierdes el estiramiento real.' },
+      ],
+      intermedio: [
+        { emoji:'🌈', nombre:'Espagat lateral (pancake)', reps:'3 × 30 seg', desc:'Piernas abiertas al máximo lateralmente, inclinarse hacia adelante entre ellas.', tip:'Mantén las piernas giradas hacia arriba (dedos al techo). Si caen hacia adelante, no es espagat lateral.' },
+        { emoji:'🦄', nombre:'Puente caminando con manos', reps:'3 × 5 rep / dirección', desc:'Desde el puente, caminar con las manos hacia los pies y viceversa. Columna activa.', tip:'Los pies no se mueven. Solo las manos se acercan y alejan de los pies.' },
+        { emoji:'🌺', nombre:'Cuádriceps profundo en pared', reps:'3 × 30 seg / pierna', desc:'De rodillas frente a la pared, pie de atrás apoyado en ella. Cuádriceps profundo.', tip:'Cuanto más cerca de la pared, más intenso. Empieza lejos y acércate poco a poco cada sesión.' },
+        { emoji:'💫', nombre:'Espagat frontal activo', reps:'3 × 10 rep / pierna', desc:'Espagat frontal subiendo y bajando la pierna trasera activamente. Flexibilidad activa.', tip:'La flexibilidad activa (sin apoyo externo) es la que sirve en la pista. Más difícil que la pasiva.' },
+        { emoji:'🔮', nombre:'Arco de columna (back bend)', reps:'3 × 15 seg', desc:'Desde de pie, arquear la columna hacia atrás con brazos extendidos. Columna dorsal abierta.', tip:'Mira las manos durante todo el arco. Donde van las manos, va la cabeza. Eso protege el cuello.' },
+        { emoji:'🎭', nombre:'Rutina de estiramiento 15 min', reps:'Secuencia completa', desc:'Caderas → espagat frontal → espagat lateral → columna → hombros → cuádriceps. 15 minutos diarios.', tip:'La flexibilidad se construye acumulando minutos, no sesiones intensas puntuales. Diario y constante.' },
+      ],
+      avanzado: [
+        { emoji:'💫', nombre:'Espagat completo (ambas piernas)', reps:'3 × 45 seg / pierna', desc:'Espagat frontal con ambas caderas en el suelo, sin apoyo lateral. Versión de competición.', tip:'Llegar al espagat completo puede tomar 6-12 meses. La consistencia diaria es lo único que lo logra.' },
+        { emoji:'🌙', nombre:'Extensión de pierna activa en barra', reps:'3 × 10 rep', desc:'Pie en barra (90°), extender la pierna elevada sin agarrarte. Flexibilidad activa pura.', tip:'Activa el cuádriceps al extender la pierna: la tensión activa protege la articulación de la cadera.' },
+        { emoji:'🔮', nombre:'Rueda profunda', reps:'3 × 20 seg', desc:'Puente con brazos y piernas lo más juntos posible. Trabajo de columna dorsal profunda.', tip:'No fuerces la rueda profunda sin calentamiento de columna. Siempre después de puentes graduales.' },
+        { emoji:'🌊', nombre:'Puente con extensión de pierna', reps:'3 × 5 rep / pierna', desc:'Desde el puente, elevar una pierna completamente extendida hacia el techo. Equilibrio y flex.', tip:'La pierna de apoyo permanece completamente extendida. Si doblas la rodilla, perdes la posición.' },
+        { emoji:'🎯', nombre:'Espagat + extensión de torso', reps:'3 × 30 seg / lado', desc:'Espagat frontal con el torso completamente extendido hacia atrás sobre la pierna trasera.', tip:'Esta posición combina espagat + columna + hombros. Es el nivel más alto de flexibilidad de suelo.' },
+        { emoji:'🌟', nombre:'Rutina avanzada 20 min', reps:'Secuencia completa', desc:'Espagat activos + rueda + extensiones + hombros. Flexibilidad activa y pasiva integrada.', tip:'En nivel avanzado, dejar de trabajar la flex 2 semanas supone retroceder. La constancia lo mantiene.' },
+      ],
+    },
+  };
+
+  // Ejercicios de calentamiento fijo
+  const CALENTAMIENTO_POOL = [
+    { nombre: 'Carrera estática', reps: '30 seg', desc: 'Rodillas altas, brazos activos y coordinados' },
+    { nombre: 'Jumping jacks', reps: '20 rep', desc: 'Coordinación de brazos y piernas al mismo tiempo' },
+    { nombre: 'Hollow hold', reps: '20 seg', desc: 'Espalda pegada al suelo, cuerpo en tensión completa' },
+    { nombre: 'Giros de muñecas y tobillos', reps: '10 rep c/u', desc: 'Prepara las articulaciones para el trabajo' },
+    { nombre: 'Balanceos de pierna', reps: '8 rep / pierna', desc: 'Adelante, atrás y lateral — movilidad de cadera' },
+    { nombre: 'Sentadillas', reps: '10 rep', desc: 'Profundas, con los talones en el suelo' },
+    { nombre: 'Rotaciones de hombros', reps: '10 rep c/sentido', desc: 'Círculos amplios con brazos extendidos' },
+    { nombre: 'Superman breve', reps: '10 seg', desc: 'Activar la cadena posterior antes del ejercicio principal' },
+  ];
+
+  // Tips de cierre por área (nota de Emma al final de la sesión)
+  const EMMA_TIPS_SESION = {
+    suelo:        'El suelo es el aparato más expresivo. Técnica + coreografía = suelo de competición. Trabaja los dos.',
+    barra:        'La barra es el aparato más difícil mentalmente. Cada paso requiere 100% de atención. Entrena también la concentración.',
+    paralelas:    'En paralelas, la fuerza sin técnica no llega lejos. Y la técnica sin fuerza tampoco. Las dos van juntas.',
+    salto:        'El salto dura menos de 2 segundos. Pero esos 2 segundos requieren potencia, técnica y valentía. Todo a la vez.',
+    fuerza:       'Una gymnasta fuerte se lesiona menos y rinde más en todos los aparatos. El físico es tu mejor inversión.',
+    flexibilidad: 'La flexibilidad no se puede apresurar. Un poco cada día, todos los días. Así llega el espagat.',
+  };
+
+
+  // ── UTILIDADES ───────────────────────────────────────────────
+
+  function shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function pickExs(area, nivel, n) {
+    const pool = DB[area]?.[nivel] ?? DB[area]?.basico ?? [];
+    return shuffle(pool).slice(0, Math.min(n, pool.length));
+  }
+
+  function pickCalentamiento(n) {
+    return shuffle(CALENTAMIENTO_POOL).slice(0, n);
+  }
+
+
+  // ── CONSTRUCCIÓN DE LA SEMANA ─────────────────────────────────
+  // Distribuye los días de entrenamiento de forma uniforme en 7 días
+
+  function buildWeek(clubDias, casaDias) {
+    const total = clubDias + casaDias;
+    const week = Array(7).fill('rest');
+    if (total === 0) return week;
+    if (total >= 7) {
+      // Si no cabe con espaciado, rellenar desde el lunes
+      for (let i = 0; i < Math.min(total, 7); i++) {
+        week[i] = i < clubDias ? 'club' : 'home';
+      }
+      return week;
+    }
+    // Espaciado uniforme: step = 7 / total, posición centrada en cada intervalo
+    const step = 7 / total;
+    const positions = [];
+    for (let i = 0; i < total; i++) {
+      positions.push(Math.min(Math.floor(i * step + step / 2), 6));
+    }
+    // Deduplicar
+    const seen = new Set();
+    const unique = [];
+    for (const p of positions) {
+      if (!seen.has(p)) { seen.add(p); unique.push(p); }
+    }
+    for (let i = 0; i < 7 && unique.length < total; i++) {
+      if (!seen.has(i)) { seen.add(i); unique.push(i); }
+    }
+    unique.sort((a, b) => a - b);
+    unique.forEach((pos, idx) => {
+      week[pos] = idx < clubDias ? 'club' : 'home';
+    });
+    return week;
+  }
+
+
+  // ── GENERACIÓN DE SESIONES ────────────────────────────────────
+
+  function createSessions(casaDias, nivel, prioridades) {
+    const sessions = [];
+    for (let i = 0; i < casaDias; i++) {
+      const mainArea = prioridades[i % prioridades.length];
+      const meta = AREA_META[mainArea];
+
+      // Bloques de ejercicios
+      const warmup = pickCalentamiento(3);
+      const mainExs = pickExs(mainArea, nivel, 4);
+
+      // Bloque complementario: fuerza + flex (si no son ya el área principal)
+      const compExs = [];
+      if (mainArea !== 'fuerza') compExs.push(...pickExs('fuerza', nivel, 1));
+      if (mainArea !== 'flexibilidad') compExs.push(...pickExs('flexibilidad', nivel, 1));
+
+      sessions.push({
+        idx: i,
+        area: mainArea,
+        nombre: meta.nombre,
+        emoji: meta.emoji,
+        bloqueClass: meta.bloqueClass,
+        sesionClass: meta.sesionClass,
+        color: meta.color,
+        duracion: `${35 + (compExs.length * 5)} – ${45 + (compExs.length * 5)} min`,
+        warmup,
+        mainExs,
+        compExs,
+        emmaTip: EMMA_TIPS_SESION[mainArea],
+      });
+    }
+    return sessions;
+  }
+
+
+  // ── RENDER ───────────────────────────────────────────────────
+
+  function renderWeekGrid(week, sessions) {
+    const grid = document.getElementById('result-week-grid');
+    grid.innerHTML = '';
+    let homeIdx = 0;
+
+    week.forEach((type, i) => {
+      const dia = DIAS_SEMANA[i];
+      const el = document.createElement('div');
+
+      if (type === 'rest') {
+        el.className = 'semana-dia semana-dia--descanso';
+        el.innerHTML = `
+          <span class="semana-dia__nombre">${dia}</span>
+          <span class="semana-dia__sesion">😴 Descanso</span>
+          <span class="semana-dia__dur">Recuperación</span>
+        `;
+      } else if (type === 'club') {
+        el.className = 'semana-dia semana-dia--club';
+        el.innerHTML = `
+          <span class="semana-dia__nombre">${dia}</span>
+          <span class="semana-dia__sesion">🤸 Club</span>
+          <span class="semana-dia__dur">Con Emma</span>
+        `;
+      } else {
+        const s = sessions[homeIdx];
+        el.className = 'semana-dia semana-dia--entrena';
+        el.setAttribute('role', 'link');
+        el.style.cursor = 'pointer';
+        el.onclick = () => {
+          document.getElementById(`sesion-home-${homeIdx}`).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        };
+        el.innerHTML = `
+          <span class="semana-dia__nombre">${dia}</span>
+          <span class="semana-dia__sesion">${s.emoji} ${s.nombre}</span>
+          <span class="semana-dia__dur">${s.duracion}</span>
+          <span class="semana-dia__link">Ver sesión →</span>
+        `;
+        homeIdx++;
+      }
+      grid.appendChild(el);
+    });
+  }
+
+  function renderSessions(sessions) {
+    const container = document.getElementById('result-sessions');
+    container.innerHTML = '';
+
+    sessions.forEach((s, i) => {
+      const section = document.createElement('section');
+      section.className = `sesion-wrap${i % 2 === 1 ? ' sesion-wrap--alt' : ''}`;
+      section.id = `sesion-home-${i}`;
+      section.setAttribute('aria-labelledby', `sesion-titulo-${i}`);
+
+      section.innerHTML = `
+        <div class="container">
+          <div class="sesion-panel">
+
+            <div class="sesion-header ${s.sesionClass}">
+              <div class="sesion-header__emoji" aria-hidden="true">${s.emoji}</div>
+              <div class="sesion-header__info">
+                <h2 class="sesion-header__titulo" id="sesion-titulo-${i}">
+                  Sesión ${i + 1} — ${s.nombre}
+                </h2>
+                <div class="sesion-header__meta">
+                  <span><i data-lucide="clock"></i> ${s.duracion}</span>
+                  <span><i data-lucide="home"></i> Entrenamiento en casa</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Calentamiento -->
+            <div class="bloque bloque--calentamiento">
+              <div class="bloque__header">
+                <div class="bloque__titulo-wrap">
+                  <span class="bloque__ico">🔥</span>
+                  <span class="bloque__titulo">Calentamiento</span>
+                </div>
+                <span class="bloque__rondas">2 vueltas · 5-8 min</span>
+              </div>
+              <div class="bloque__lista">
+                ${s.warmup.map(e => `
+                  <div class="ejercicio">
+                    <div class="ejercicio__info">
+                      <strong class="ejercicio__nombre">${e.nombre}</strong>
+                      <span class="ejercicio__desc">${e.desc}</span>
+                    </div>
+                    <span class="ejercicio__meta">${e.reps}</span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Bloque principal -->
+            <div class="bloque ${s.bloqueClass}">
+              <div class="bloque__header">
+                <div class="bloque__titulo-wrap">
+                  <span class="bloque__ico">${s.emoji}</span>
+                  <span class="bloque__titulo">${s.nombre} — Bloque principal</span>
+                </div>
+                <span class="bloque__rondas">3 series cada uno</span>
+              </div>
+              <div class="bloque__lista">
+                ${s.mainExs.map((e, ei) => `
+                  <div class="ejercicio${ei === 0 ? ' ejercicio--destacado' : ''}">
+                    <div class="ejercicio__info">
+                      <strong class="ejercicio__nombre">${e.emoji} ${e.nombre}</strong>
+                      <span class="ejercicio__desc">${e.desc}</span>
+                      ${e.tip ? `<span class="ejercicio__desc" style="color:#B45309; margin-top:2px;">💡 ${e.tip}</span>` : ''}
+                    </div>
+                    <span class="ejercicio__meta">${e.reps}</span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Bloque complementario (si lo hay) -->
+            ${s.compExs.length > 0 ? `
+              <div class="bloque bloque--prevencion">
+                <div class="bloque__header">
+                  <div class="bloque__titulo-wrap">
+                    <span class="bloque__ico">⚡</span>
+                    <span class="bloque__titulo">Complementario — Fuerza y flexibilidad</span>
+                  </div>
+                  <span class="bloque__rondas">2-3 series</span>
+                </div>
+                <div class="bloque__lista">
+                  ${s.compExs.map(e => `
+                    <div class="ejercicio">
+                      <div class="ejercicio__info">
+                        <strong class="ejercicio__nombre">${e.emoji} ${e.nombre}</strong>
+                        <span class="ejercicio__desc">${e.desc}</span>
+                      </div>
+                      <span class="ejercicio__meta">${e.reps}</span>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            ` : ''}
+
+            <!-- Nota de Emma -->
+            <div class="nota-emma nota-emma--${s.sesionClass.includes('amber') ? 'amber' : s.sesionClass.includes('green') ? 'green' : ''}">
+              <div class="nota-emma__icon" aria-hidden="true">💬</div>
+              <div class="nota-emma__contenido">
+                <span class="nota-emma__titulo">Emma dice:</span>
+                <p class="nota-emma__texto">"${s.emmaTip}"</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      `;
+
+      container.appendChild(section);
+    });
+
+    // Re-inicializar Lucide para los iconos nuevos
+    if (window.lucide) window.lucide.createIcons();
+  }
+
+  function renderSummary(config) {
+    const { diasClub, diasCasa, nivel, prioridades } = config;
+    const nivelLabels = { basico: 'principiante', intermedio: 'intermedia', avanzado: 'avanzada' };
+    const prioLabels = prioridades.map(p => AREA_META[p].nombre).join(', ');
+    document.getElementById('result-summary').textContent =
+      `${diasCasa} día${diasCasa > 1 ? 's' : ''} en casa · ${diasClub} en el club · ` +
+      `Nivel ${nivelLabels[nivel]} · Prioridad: ${prioLabels}`;
+  }
+
+
+  // ── ESTADO ───────────────────────────────────────────────────
+
+  const state = { diasClub: null, diasCasa: null, nivel: null, prioridades: [] };
+  let currentSessions = [];
+
+  function generarPrograma() {
+    const week = buildWeek(state.diasClub, state.diasCasa);
+    currentSessions = createSessions(state.diasCasa, state.nivel, state.prioridades);
+    renderSummary(state);
+    renderWeekGrid(week, currentSessions);
+    renderSessions(currentSessions);
+
+    document.getElementById('wizard-section').style.display = 'none';
+    document.getElementById('result-section').style.display = 'block';
+    document.getElementById('result-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+
+  // ── WIZARD: LÓGICA DE PASOS ──────────────────────────────────
+
+  function showStep(n) {
+    document.querySelectorAll('.wizard-step').forEach(s => s.classList.remove('wizard-step--active'));
+    document.getElementById(`step-${n}`).classList.add('wizard-step--active');
+
+    // Actualizar indicadores de progreso
+    [1, 2, 3].forEach(i => {
+      const ind = document.getElementById(`prog-ind-${i}`);
+      ind.classList.remove('wizard-progress__step--active', 'wizard-progress__step--done');
+      if (i < n) ind.classList.add('wizard-progress__step--done');
+      else if (i === n) ind.classList.add('wizard-progress__step--active');
+    });
+    if (document.getElementById('line-1-2')) {
+      document.getElementById('line-1-2').classList.toggle('wizard-progress__line--done', n >= 2);
+      document.getElementById('line-2-3').classList.toggle('wizard-progress__line--done', n >= 3);
+    }
+  }
+
+  function checkStep1() {
+    const ok = state.diasClub !== null && state.diasCasa !== null;
+    const total = (state.diasClub || 0) + (state.diasCasa || 0);
+    const tooMany = total >= 7;
+    document.getElementById('dias-warning').style.display = tooMany ? 'flex' : 'none';
+    document.getElementById('btn-step1-next').disabled = !ok || tooMany;
+  }
+
+  // Selectores de número de días
+  function setupNumSelector(selectorId, stateKey) {
+    document.getElementById(selectorId).querySelectorAll('.num-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.getElementById(selectorId).querySelectorAll('.num-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        state[stateKey] = parseInt(btn.dataset.val, 10);
+        checkStep1();
+      });
+    });
+  }
+
+  setupNumSelector('club-selector', 'diasClub');
+  setupNumSelector('casa-selector', 'diasCasa');
+
+  // Navegación entre pasos
+  document.getElementById('btn-step1-next').addEventListener('click', () => showStep(2));
+  document.getElementById('btn-step2-back').addEventListener('click', () => showStep(1));
+  document.getElementById('btn-step3-back').addEventListener('click', () => showStep(2));
+
+  // Selector de nivel
+  document.querySelectorAll('.level-card').forEach(card => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.level-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      state.nivel = card.dataset.val;
+      document.getElementById('btn-step2-next').disabled = false;
+    });
+  });
+  document.getElementById('btn-step2-next').addEventListener('click', () => showStep(3));
+
+  // Selector de prioridades (multi-select, máx 3)
+  document.querySelectorAll('.priority-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const val = card.dataset.val;
+      const idx = state.prioridades.indexOf(val);
+      if (idx >= 0) {
+        // Deseleccionar
+        state.prioridades.splice(idx, 1);
+        card.classList.remove('selected');
+      } else if (state.prioridades.length < 3) {
+        // Seleccionar
+        state.prioridades.push(val);
+        card.classList.add('selected');
+      }
+      // Deshabilitar las no seleccionadas si ya hay 3
+      document.querySelectorAll('.priority-card').forEach(c => {
+        if (!c.classList.contains('selected')) {
+          c.classList.toggle('priority-card--disabled', state.prioridades.length >= 3);
+        }
+      });
+      document.getElementById('priority-count').textContent = state.prioridades.length;
+      document.getElementById('btn-generate').disabled = state.prioridades.length === 0;
+    });
+  });
+
+  // Generar
+  document.getElementById('btn-generate').addEventListener('click', generarPrograma);
+
+  // Regenerar (misma config, nuevos ejercicios)
+  document.getElementById('btn-regenerate').addEventListener('click', () => {
+    const week = buildWeek(state.diasClub, state.diasCasa);
+    currentSessions = createSessions(state.diasCasa, state.nivel, state.prioridades);
+    renderWeekGrid(week, currentSessions);
+    renderSessions(currentSessions);
+    document.getElementById('result-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // Modificar (volver al wizard)
+  document.getElementById('btn-edit').addEventListener('click', () => {
+    document.getElementById('result-section').style.display = 'none';
+    document.getElementById('wizard-section').style.display = 'block';
+    document.getElementById('wizard-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    showStep(1);
+  });
+
+  // Crear programa nuevo (reset completo)
+  document.getElementById('btn-restart').addEventListener('click', () => {
+    // Reset estado
+    state.diasClub = null;
+    state.diasCasa = null;
+    state.nivel = null;
+    state.prioridades = [];
+    // Reset UI
+    document.querySelectorAll('.num-btn, .level-card, .priority-card').forEach(el => {
+      el.classList.remove('selected', 'priority-card--disabled');
+    });
+    document.getElementById('priority-count').textContent = '0';
+    document.getElementById('btn-step1-next').disabled = true;
+    document.getElementById('btn-step2-next').disabled = true;
+    document.getElementById('btn-generate').disabled = true;
+    // Mostrar wizard
+    document.getElementById('result-section').style.display = 'none';
+    document.getElementById('wizard-section').style.display = 'block';
+    document.getElementById('wizard-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    showStep(1);
+  });
+
+  </script>
+
+</body>
+</html>
