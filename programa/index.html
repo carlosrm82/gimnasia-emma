@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plan de entrenamiento en casa de Emma Romero. Tres sesiones semanales de fuerza, saltos y flexibilidad para mejorar en gimnasia artística." />
+  <meta property="og:title" content="Plan de Entrenamiento en Casa · Emma Romero" />
+  <meta property="og:description" content="Entrena en casa con el plan personalizado de Emma: fuerza, saltos y flexibilidad." />
+  <meta property="og:type" content="website" />
+  <title>Plan de Entrenamiento · Emma Romero · Gimnasia Artística</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- ===========================
+       CABECERA / NAV
+  =========================== -->
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="../index.html#aparatos">Aparatos</a></li>
+        <li><a href="index.html" aria-current="page" style="color: var(--color-primary);">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="../index.html#aparatos">Aparatos</a></li>
+        <li><a href="index.html">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===========================
+         HERO / RESUMEN
+    =========================== -->
+    <section class="prog-hero">
+      <div class="prog-hero__bg" aria-hidden="true">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+      </div>
+      <div class="container">
+
+        <div class="prog-hero__intro reveal">
+          <span class="section__tag">🏠 Entrena en casa</span>
+          <h1 class="prog-hero__title">Tu plan semanal<br /><span class="hero__title--accent">con Emma</span></h1>
+          <p class="prog-hero__subtitle">3 sesiones en casa que complementan tus entrenos en el club. Sin excusas, sin material especial. ¡A por ello!</p>
+
+          <div class="objetivos-list">
+            <span class="objetivos-list__label">Objetivos:</span>
+            <ul>
+              <li><i data-lucide="zap"></i> Saltos y potencia</li>
+              <li><i data-lucide="shield"></i> Core fuerte</li>
+              <li><i data-lucide="dumbbell"></i> Fuerza para aparatos</li>
+              <li><i data-lucide="heart"></i> Flexibilidad útil</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Resumen de la semana -->
+        <div class="semana-grid reveal reveal--delay">
+          <a href="#lunes" class="semana-dia semana-dia--entrena">
+            <span class="semana-dia__nombre">Lunes</span>
+            <span class="semana-dia__sesion">💪 Fuerza</span>
+            <span class="semana-dia__dur">25–30 min</span>
+            <span class="semana-dia__link">Ver sesión →</span>
+          </a>
+          <div class="semana-dia semana-dia--club">
+            <span class="semana-dia__nombre">Martes</span>
+            <span class="semana-dia__sesion">🤸 Club</span>
+            <span class="semana-dia__dur">—</span>
+          </div>
+          <a href="#miercoles" class="semana-dia semana-dia--entrena">
+            <span class="semana-dia__nombre">Miércoles</span>
+            <span class="semana-dia__sesion">🦘 Saltos</span>
+            <span class="semana-dia__dur">20–25 min</span>
+            <span class="semana-dia__link">Ver sesión →</span>
+          </a>
+          <a href="#jueves" class="semana-dia semana-dia--entrena">
+            <span class="semana-dia__nombre">Jueves</span>
+            <span class="semana-dia__sesion">🧘 Flex</span>
+            <span class="semana-dia__dur">20 min</span>
+            <span class="semana-dia__link">Ver sesión →</span>
+          </a>
+          <div class="semana-dia semana-dia--club">
+            <span class="semana-dia__nombre">Viernes</span>
+            <span class="semana-dia__sesion">🤸 Club</span>
+            <span class="semana-dia__dur">—</span>
+          </div>
+          <div class="semana-dia semana-dia--club">
+            <span class="semana-dia__nombre">Sábado</span>
+            <span class="semana-dia__sesion">🤸 Club</span>
+            <span class="semana-dia__dur">Opcional</span>
+          </div>
+          <div class="semana-dia semana-dia--descanso">
+            <span class="semana-dia__nombre">Domingo</span>
+            <span class="semana-dia__sesion">😴 Descanso</span>
+            <span class="semana-dia__dur">Opcional</span>
+          </div>
+        </div>
+
+        <!-- Material disponible -->
+        <div class="material-row reveal reveal--delay-1">
+          <span class="material-row__label"><i data-lucide="package"></i> Material:</span>
+          <div class="material-tags">
+            <span class="material-tag">Barra dominadas</span>
+            <span class="material-tag">Barra baja</span>
+            <span class="material-tag">Anillas</span>
+            <span class="material-tag">Paralelas</span>
+            <span class="material-tag">Bandas</span>
+            <span class="material-tag">Cajón pliométrico</span>
+            <span class="material-tag">Colchoneta</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===========================
+         LUNES — FUERZA DE GIMNASTA
+    =========================== -->
+    <section class="sesion-wrap" id="lunes" aria-labelledby="titulo-lunes">
+      <div class="container">
+        <div class="sesion-panel">
+
+          <div class="sesion-header reveal">
+            <div class="sesion-header__emoji" aria-hidden="true">💪</div>
+            <div class="sesion-header__info">
+              <h2 class="sesion-header__titulo" id="titulo-lunes">Lunes — Fuerza de Gimnasta</h2>
+              <div class="sesion-header__meta">
+                <span><i data-lucide="clock"></i> 25–30 min</span>
+                <span><i data-lucide="repeat"></i> Cada semana</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Calentamiento -->
+          <div class="bloque bloque--calentamiento reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">🔥</span>
+                <span class="bloque__titulo">Calentamiento</span>
+              </div>
+              <span class="bloque__rondas">2 vueltas</span>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Jumping jacks</strong>
+                </div>
+                <span class="ejercicio__meta">30 reps</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Hollow hold</strong>
+                  <span class="ejercicio__desc">Espalda pegada al suelo, cuerpo en tensión</span>
+                </div>
+                <span class="ejercicio__meta">20 seg</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Sentadillas</strong>
+                </div>
+                <span class="ejercicio__meta">10 reps</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bloque principal -->
+          <div class="bloque bloque--principal reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">🏋️</span>
+                <span class="bloque__titulo">Bloque principal — Barra / Anillas</span>
+              </div>
+              <span class="bloque__rondas">4 rondas</span>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Dominadas con kipping</strong>
+                  <span class="ejercicio__desc">Explosivas y controladas — trabaja el impulso completo</span>
+                </div>
+                <span class="ejercicio__meta">4–6 reps</span>
+              </div>
+              <div class="ejercicio ejercicio--destacado">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Dominadas lentas (negativas) ⭐</strong>
+                  <span class="ejercicio__desc">Baja en 5 seg. Fuerza real. Hazlas 2 días/semana</span>
+                </div>
+                <span class="ejercicio__meta">3 reps muy lentas</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">L-sit en paralelas o anillas</strong>
+                  <span class="ejercicio__desc">Piernas paralelas al suelo. Si no sale, empieza con rodillas dobladas</span>
+                </div>
+                <span class="ejercicio__meta">10 seg</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Colgada activa</strong>
+                  <span class="ejercicio__desc">Hombros activos (hundidos), no colgarte "muerta" — esto es clave</span>
+                </div>
+                <span class="ejercicio__meta">20 seg</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pino -->
+          <div class="bloque bloque--pino reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">🤸</span>
+                <span class="bloque__titulo">Pino</span>
+              </div>
+              <span class="bloque__rondas">5 min práctica libre</span>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Pino libre sin pared</strong>
+                  <span class="ejercicio__desc">Aguantar el equilibrio, cambiar de punto de apoyo</span>
+                </div>
+                <span class="ejercicio__meta ejercicio__meta--practica">práctica</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Caminar en pino</strong>
+                  <span class="ejercicio__desc">¡Ya lo haces! Intenta más pasos o cambiar dirección</span>
+                </div>
+                <span class="ejercicio__meta ejercicio__meta--practica">práctica</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Tocar hombros en pino</strong>
+                  <span class="ejercicio__desc">Controlando sin caer — trabaja el equilibrio activo</span>
+                </div>
+                <span class="ejercicio__meta ejercicio__meta--practica">práctica</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core -->
+          <div class="bloque bloque--core reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">⚡</span>
+                <span class="bloque__titulo">Core</span>
+              </div>
+              <span class="bloque__rondas">3 rondas</span>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Hollow hold</strong>
+                  <span class="ejercicio__desc">Posición de plátano: lumbares en el suelo, todo en tensión</span>
+                </div>
+                <span class="ejercicio__meta">20 seg</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Elevaciones de piernas</strong>
+                  <span class="ejercicio__desc">Espalda plana, baja sin tocar el suelo</span>
+                </div>
+                <span class="ejercicio__meta">10 reps</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Superman</strong>
+                  <span class="ejercicio__desc">Boca abajo, sube brazos y piernas a la vez — mantén</span>
+                </div>
+                <span class="ejercicio__meta">20 seg</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fuerza escapular -->
+          <div class="bloque bloque--escapular reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">🔄</span>
+                <span class="bloque__titulo">Fuerza Escapular</span>
+              </div>
+              <span class="bloque__rondas">3 series · 2–3 días/semana</span>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Scapular pull-ups</strong>
+                  <span class="ejercicio__desc">Colgada en barra: sube y baja solo los omóplatos, brazos rectos</span>
+                </div>
+                <span class="ejercicio__meta">10 reps</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Scapular push-ups</strong>
+                  <span class="ejercicio__desc">En plancha: protrae y retrae los omóplatos sin doblar codos</span>
+                </div>
+                <span class="ejercicio__meta">10 reps</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nota Emma -->
+          <div class="nota-emma reveal">
+            <div class="nota-emma__icon">★</div>
+            <div class="nota-emma__content">
+              <p class="nota-emma__titulo">Nota sobre las dominadas</p>
+              <p>Las que haces ahora son con kipping (impulso de cadera), que está bien para explosividad. Para gimnasia necesitas también fuerza real. Las <strong>negativas lentas</strong> (bajar en 5 seg) son la clave.</p>
+              <p class="nota-emma__objetivo">Objetivo a medio plazo: <strong>6–8 dominadas estrictas y controladas.</strong></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         MIÉRCOLES — SALTOS Y POTENCIA
+    =========================== -->
+    <section class="sesion-wrap sesion-wrap--alt" id="miercoles" aria-labelledby="titulo-miercoles">
+      <div class="container">
+        <div class="sesion-panel">
+
+          <div class="sesion-header sesion-header--amber reveal">
+            <div class="sesion-header__emoji" aria-hidden="true">🦘</div>
+            <div class="sesion-header__info">
+              <h2 class="sesion-header__titulo" id="titulo-miercoles">Miércoles — Saltos y Potencia</h2>
+              <div class="sesion-header__meta">
+                <span><i data-lucide="clock"></i> 20–25 min</span>
+                <span><i data-lucide="zap"></i> Explosividad y calidad</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Calentamiento -->
+          <div class="bloque bloque--calentamiento reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">🔥</span>
+                <span class="bloque__titulo">Calentamiento</span>
+              </div>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Skipping</strong>
+                  <span class="ejercicio__desc">Rodillas bien arriba, ritmo rápido</span>
+                </div>
+                <span class="ejercicio__meta">30 seg</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Movilidad de tobillos</strong>
+                </div>
+                <span class="ejercicio__meta">10 círculos c/lado</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Sentadillas</strong>
+                </div>
+                <span class="ejercicio__meta">10 reps</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Saltos -->
+          <div class="bloque bloque--saltos reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">🦘</span>
+                <span class="bloque__titulo">Saltos</span>
+              </div>
+              <span class="bloque__rondas">4 rondas · ~1 min descanso</span>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Saltos al cajón</strong>
+                  <span class="ejercicio__desc">Objetivo: confianza y aterrizaje limpio, no solo altura — empieza en la altura más baja</span>
+                </div>
+                <span class="ejercicio__meta">5 reps</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Saltos largos</strong>
+                  <span class="ejercicio__desc">Impulso con los dos pies, aterrizaje suave absorbiendo con rodillas</span>
+                </div>
+                <span class="ejercicio__meta">5 reps</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Saltos en tijera</strong>
+                  <span class="ejercicio__desc">Alternar piernas en el aire, rápido y explosivo</span>
+                </div>
+                <span class="ejercicio__meta">8 reps</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core dinámico -->
+          <div class="bloque bloque--core reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">⚡</span>
+                <span class="bloque__titulo">Core Dinámico</span>
+              </div>
+              <span class="bloque__rondas">3 rondas</span>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">V-ups</strong>
+                  <span class="ejercicio__desc">Sube piernas y torso a la vez, toca los pies con las manos</span>
+                </div>
+                <span class="ejercicio__meta">10 reps</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Elevaciones de piernas</strong>
+                  <span class="ejercicio__desc">Espalda plana, baja controlando sin tocar el suelo</span>
+                </div>
+                <span class="ejercicio__meta">10 reps</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Hollow hold</strong>
+                  <span class="ejercicio__desc">Posición de plátano: tensión total</span>
+                </div>
+                <span class="ejercicio__meta">20 seg</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prevención -->
+          <div class="bloque bloque--prevencion reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">🛡️</span>
+                <span class="bloque__titulo">Prevención Rodilla y Tobillo</span>
+              </div>
+              <span class="bloque__rondas">3 rondas</span>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Sentadilla a una pierna asistida</strong>
+                  <span class="ejercicio__desc">Con apoyo en pared o barra. Baja despacio y controla la rodilla</span>
+                </div>
+                <span class="ejercicio__meta">10 reps c/pierna</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Elevaciones de gemelos</strong>
+                  <span class="ejercicio__desc">Sube de puntillas lento, baja controlando — pausa arriba</span>
+                </div>
+                <span class="ejercicio__meta">15 reps</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notas -->
+          <div class="notas-fila reveal">
+            <div class="nota-emma nota-emma--amber">
+              <div class="nota-emma__icon">★</div>
+              <div class="nota-emma__content">
+                <p class="nota-emma__titulo">Sobre el cajón</p>
+                <p>El límite no es la fuerza, es la confianza. Empieza siempre en la altura más baja. Cuando 5 saltos seguidos se sientan fáciles y los aterrizajes son limpios, sube de altura.</p>
+              </div>
+            </div>
+            <div class="nota-emma nota-emma--amber">
+              <div class="nota-emma__icon">🎯</div>
+              <div class="nota-emma__content">
+                <p class="nota-emma__titulo">Objetivo de la sesión</p>
+                <p>Saltos explosivos con buena intención. <strong>No es una sesión de cansancio, es de calidad.</strong></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         JUEVES — FLEXIBILIDAD Y CONTROL
+    =========================== -->
+    <section class="sesion-wrap" id="jueves" aria-labelledby="titulo-jueves">
+      <div class="container">
+        <div class="sesion-panel">
+
+          <div class="sesion-header sesion-header--rose reveal">
+            <div class="sesion-header__emoji" aria-hidden="true">🧘</div>
+            <div class="sesion-header__info">
+              <h2 class="sesion-header__titulo" id="titulo-jueves">Jueves — Flexibilidad y Control</h2>
+              <div class="sesion-header__meta">
+                <span><i data-lucide="clock"></i> 20 min</span>
+                <span><i data-lucide="heart"></i> Control corporal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hombros -->
+          <div class="bloque bloque--hombros reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">🔄</span>
+                <span class="bloque__titulo">Hombros — Movilidad y Apertura</span>
+              </div>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Movilidad con banda</strong>
+                  <span class="ejercicio__desc">Brazos rectos, pasa la banda de adelante hacia atrás por encima de la cabeza, lento</span>
+                </div>
+                <span class="ejercicio__meta">1 min</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Estiramiento en pared</strong>
+                  <span class="ejercicio__desc">Brazo extendido en pared, gira el cuerpo despacio hasta notar el pecho</span>
+                </div>
+                <span class="ejercicio__meta">30 seg c/lado</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Espagat -->
+          <div class="bloque bloque--espagat reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">🦵</span>
+                <span class="bloque__titulo">Espagat</span>
+              </div>
+              <span class="bloque__rondas">3 rondas</span>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Espagat (split)</strong>
+                  <span class="ejercicio__desc">Calienta antes de bajar. Baja despacio. Para si duele. Mantén torso recto.</span>
+                </div>
+                <span class="ejercicio__meta">40 seg c/pierna</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Espagat lateral</strong>
+                  <span class="ejercicio__desc">Solo si hay movilidad suficiente, sin forzar</span>
+                </div>
+                <span class="ejercicio__meta">30 seg</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Puente -->
+          <div class="bloque bloque--puente reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">🌉</span>
+                <span class="bloque__titulo">Puente</span>
+              </div>
+              <span class="bloque__rondas">3 rondas</span>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Puente estático</strong>
+                  <span class="ejercicio__desc">Empuja el suelo con manos y pies. Activa el core. No fuerces el cuello.</span>
+                </div>
+                <span class="ejercicio__meta">20 seg</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Puente dinámico</strong>
+                  <span class="ejercicio__desc">Baja controlando, sin dejarte caer. Activa glúteos.</span>
+                </div>
+                <span class="ejercicio__meta">10 reps subir/bajar</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Equilibrio y control -->
+          <div class="bloque bloque--equilibrio reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">⚖️</span>
+                <span class="bloque__titulo">Equilibrio y Control</span>
+              </div>
+              <span class="bloque__rondas">3 rondas</span>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Equilibrio a una pierna</strong>
+                  <span class="ejercicio__desc">Fija la mirada en un punto fijo. Después: ojos cerrados si te sale</span>
+                </div>
+                <span class="ejercicio__meta">20 seg c/pierna</span>
+              </div>
+              <div class="ejercicio">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">Pistol squat asistida</strong>
+                  <span class="ejercicio__desc">Con apoyo en pared o barra. Baja despacio, controla la rodilla. Talón en suelo.</span>
+                </div>
+                <span class="ejercicio__meta">10 reps c/pierna</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- L-sit progresión -->
+          <div class="bloque bloque--lsit reveal">
+            <div class="bloque__header">
+              <div class="bloque__titulo-wrap">
+                <span class="bloque__ico">💺</span>
+                <span class="bloque__titulo">Progresión L-sit</span>
+              </div>
+              <span class="bloque__rondas">3 veces/semana — cualquier día</span>
+            </div>
+            <div class="bloque__lista">
+              <div class="ejercicio ejercicio--destacado">
+                <div class="ejercicio__info">
+                  <strong class="ejercicio__nombre">L-sit en paralelas o anillas ⭐</strong>
+                  <span class="ejercicio__desc">Si no llegan las piernas arriba: empieza con rodillas dobladas y ve subiendo poco a poco</span>
+                </div>
+                <span class="ejercicio__meta">5 intentos × 10–15 seg</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notas -->
+          <div class="notas-fila notas-fila--col3 reveal">
+            <div class="nota-emma nota-emma--rose">
+              <div class="nota-emma__icon">⚠️</div>
+              <div class="nota-emma__content">
+                <p class="nota-emma__titulo">Flexibilidad importante</p>
+                <p>Nunca hagas espagat sin calentar primero. Si hay molestia aguda, para.</p>
+              </div>
+            </div>
+            <div class="nota-emma nota-emma--rose">
+              <div class="nota-emma__icon">🎯</div>
+              <div class="nota-emma__content">
+                <p class="nota-emma__titulo">Control vs Flexibilidad</p>
+                <p>No sirve de nada llegar al espagat si no controlas la posición. El objetivo es <strong>flexibilidad útil</strong> para gimnasia.</p>
+              </div>
+            </div>
+            <div class="nota-emma nota-emma--rose">
+              <div class="nota-emma__icon">⏱️</div>
+              <div class="nota-emma__content">
+                <p class="nota-emma__titulo">L-sit: el tiempo es tu amigo</p>
+                <p>3×/semana con constancia = L-sit completo en 1–2 meses.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         FIN DE SEMANA — OPCIONAL
+    =========================== -->
+    <section class="sesion-wrap sesion-wrap--alt" id="finde" aria-labelledby="titulo-finde">
+      <div class="container">
+        <div class="sesion-panel">
+
+          <div class="sesion-header sesion-header--green reveal">
+            <div class="sesion-header__emoji" aria-hidden="true">⭐</div>
+            <div class="sesion-header__info">
+              <h2 class="sesion-header__titulo" id="titulo-finde">Fin de Semana — Opcional y Divertido</h2>
+              <div class="sesion-header__meta">
+                <span><i data-lucide="smile"></i> Sin obligación</span>
+                <span><i data-lucide="gamepad-2"></i> Haz lo que te apetezca</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="finde-intro reveal">La idea es simple: muévete, practica y disfruta. No es entrenamiento serio — es juego.</p>
+
+          <div class="finde-grid reveal">
+            <div class="finde-card">
+              <h3 class="finde-card__titulo">🌤️ Sábado por la tarde</h3>
+              <ul class="finde-lista">
+                <li><i data-lucide="check-circle"></i><div><strong>Práctica libre de pino</strong> — Caminar, girar, tocar hombros, retos de tiempo</div></li>
+                <li><i data-lucide="check-circle"></i><div><strong>Barra</strong> — Lo que te apetezca: colgarte, kip, giros, combinaciones</div></li>
+                <li><i data-lucide="check-circle"></i><div><strong>Anillas</strong> — Colgada, balanceo, L-sit, lo que salga</div></li>
+                <li><i data-lucide="check-circle"></i><div><strong>Circuito inventado</strong> — Monta tú misma un circuito con lo que tienes en casa</div></li>
+                <li><i data-lucide="check-circle"></i><div><strong>Reto del día</strong> — Elige un ejercicio y haz el máximo que puedas con buena forma</div></li>
+              </ul>
+            </div>
+            <div class="finde-card">
+              <h3 class="finde-card__titulo">🌅 Domingo por la mañana</h3>
+              <ul class="finde-lista">
+                <li><i data-lucide="check-circle"></i><div><strong>Cama elástica</strong> — Saltos, posiciones en el aire, combos — libertad total</div></li>
+                <li><i data-lucide="check-circle"></i><div><strong>Reto de habilidad</strong> — Intenta algo nuevo o repite lo que quieras mejorar</div></li>
+                <li><i data-lucide="check-circle"></i><div><strong>Práctica libre de suelo</strong> — Combina movimientos, inventa secuencias</div></li>
+                <li><i data-lucide="check-circle"></i><div><strong>Descanso activo</strong> — Estiramientos suaves, movilidad, nada exigente — también vale</div></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="nota-emma nota-emma--green reveal">
+            <div class="nota-emma__icon">💚</div>
+            <div class="nota-emma__content">
+              <p>El sábado y domingo <strong>no son obligatorios</strong>. Si un día no apetece, no pasa nada. Con 7,5 h de club + 3 sesiones en casa, ya es suficiente. <strong>El descanso también entrena.</strong></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         MIS RETOS Y OBJETIVOS
+    =========================== -->
+    <section class="section retos-section" id="retos" aria-labelledby="retos-titulo">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">⭐ Mis objetivos</span>
+          <h2 class="section__title" id="retos-titulo">Mis retos y objetivos</h2>
+          <p class="section__subtitle">Márcalos cuando los consigas. ¡Tú puedes, campeona!</p>
+        </div>
+
+        <div class="retos-grid">
+          <div class="reto-card reveal">
+            <div class="reto-card__check" aria-hidden="true">☐</div>
+            <div class="reto-card__body">
+              <h3 class="reto-card__titulo">L-sit completo</h3>
+              <p class="reto-card__meta">15–20 seg con piernas rectas en paralelas</p>
+              <p class="reto-card__como"><i data-lucide="lightbulb"></i> Practica 3×/semana. Empieza con rodillas dobladas si hace falta.</p>
+            </div>
+          </div>
+          <div class="reto-card reveal reveal--delay-1">
+            <div class="reto-card__check" aria-hidden="true">☐</div>
+            <div class="reto-card__body">
+              <h3 class="reto-card__titulo">Pino: 10 pasos</h3>
+              <p class="reto-card__meta">Caminar 10 pasos en pino sin apoyo en pared</p>
+              <p class="reto-card__como"><i data-lucide="lightbulb"></i> Ya caminas en pino — este reto es de distancia y control.</p>
+            </div>
+          </div>
+          <div class="reto-card reveal reveal--delay-2">
+            <div class="reto-card__check" aria-hidden="true">☐</div>
+            <div class="reto-card__body">
+              <h3 class="reto-card__titulo">Cajón con confianza</h3>
+              <p class="reto-card__meta">Saltar limpio a la altura media del cajón</p>
+              <p class="reto-card__como"><i data-lucide="lightbulb"></i> No es fuerza, es confianza. Empieza bajo y sube poco a poco.</p>
+            </div>
+          </div>
+          <div class="reto-card reveal">
+            <div class="reto-card__check" aria-hidden="true">☐</div>
+            <div class="reto-card__body">
+              <h3 class="reto-card__titulo">Dominadas estrictas</h3>
+              <p class="reto-card__meta">6–8 reps sin kipping</p>
+              <p class="reto-card__como"><i data-lucide="lightbulb"></i> Trabaja las negativas lentas (5 seg bajando) 2 veces/semana.</p>
+            </div>
+          </div>
+          <div class="reto-card reveal reveal--delay-1">
+            <div class="reto-card__check" aria-hidden="true">☐</div>
+            <div class="reto-card__body">
+              <h3 class="reto-card__titulo">Espagat completo</h3>
+              <p class="reto-card__meta">Los dos lados al suelo con buena postura</p>
+              <p class="reto-card__como"><i data-lucide="lightbulb"></i> Jueves, constancia, sin forzar. Va a salir.</p>
+            </div>
+          </div>
+          <div class="reto-card reveal reveal--delay-2">
+            <div class="reto-card__check" aria-hidden="true">☐</div>
+            <div class="reto-card__body">
+              <h3 class="reto-card__titulo">Pistol squat</h3>
+              <p class="reto-card__meta">5 reps sin apoyo, cada pierna</p>
+              <p class="reto-card__como"><i data-lucide="lightbulb"></i> Empieza asistida, reduce el apoyo poco a poco.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         BANNER MOTIVACIÓN
+    =========================== -->
+    <section class="motivacion-banner" aria-hidden="true">
+      <div class="motivacion-banner__track">
+        <span>💪 Fuerza de gimnasta</span>
+        <span>✦ Constancia y progreso</span>
+        <span>🦘 Saltos con confianza</span>
+        <span>🧘 Flexibilidad útil</span>
+        <span>⭐ Cada semana mejor</span>
+        <span>💜 Entrena con Emma</span>
+        <span>💪 Fuerza de gimnasta</span>
+        <span>✦ Constancia y progreso</span>
+        <span>🦘 Saltos con confianza</span>
+        <span>🧘 Flexibilidad útil</span>
+        <span>⭐ Cada semana mejor</span>
+        <span>💜 Entrena con Emma</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===========================
+       FOOTER
+  =========================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero · Gimnasia Artística</span>
+      </div>
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="../index.html">Inicio</a>
+        <a href="index.html">Programa</a>
+        <a href="../consejos/index.html">Consejos</a>
+      </nav>
+      <p class="footer__copy">© 2025 Emma Romero. Hecho con 💜 para gimnastas.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
