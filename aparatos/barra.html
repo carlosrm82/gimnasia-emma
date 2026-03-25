@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ejercicios de barra de equilibrio para gimnasia artística con Emma Romero. Equilibrio, giros, saltos y desmontajes." />
+  <meta property="og:title" content="Barra de Equilibrio · Emma Romero" />
+  <meta property="og:description" content="Mejora tu barra con los ejercicios de Emma: equilibrio, giros, saltos y desmontajes." />
+  <meta property="og:type" content="website" />
+  <title>Barra de Equilibrio · Emma Romero · Gimnasia Artística</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="../index.html#aparatos" style="color: var(--color-primary); font-weight:700;">Aparatos</a></li>
+        <li><a href="../programa/index.html">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="../index.html#aparatos">Aparatos</a></li>
+        <li><a href="../programa/index.html">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="aparato-hero aparato-hero--barra" aria-label="Ejercicios de barra de equilibrio">
+      <div class="aparato-hero__bg" aria-hidden="true">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+      </div>
+      <div class="container aparato-hero__inner">
+        <div class="aparato-hero__text reveal">
+          <nav class="aparato-breadcrumb" aria-label="Migas de pan">
+            <a href="../index.html">Inicio</a>
+            <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            <span>Barra de equilibrio</span>
+          </nav>
+          <span class="aparato-hero__tag">🤸 Aparato · Barra de equilibrio</span>
+          <h1 class="aparato-hero__title">Ejercicios de<br /><span class="hero__title--accent">Barra de equilibrio</span></h1>
+          <p class="aparato-hero__desc">La barra pone a prueba tu concentración, equilibrio y valentía. Con práctica constante, cada paso, giro y salto se vuelve natural y preciso.</p>
+          <div class="aparato-skills">
+            <span class="aparato-skill">⚖️ Equilibrio y control</span>
+            <span class="aparato-skill">🔄 Giros y pivots</span>
+            <span class="aparato-skill">🦘 Saltos sobre barra</span>
+            <span class="aparato-skill">🚀 Desmontajes</span>
+          </div>
+          <div class="nivel-tabs">
+            <a href="#basico"      class="nivel-tab nivel-tab--basico">⭐ Básico</a>
+            <a href="#intermedio"  class="nivel-tab nivel-tab--intermedio">⭐⭐ Intermedio</a>
+            <a href="#avanzado"    class="nivel-tab nivel-tab--avanzado">⭐⭐⭐ Avanzado</a>
+          </div>
+        </div>
+        <div class="aparato-hero__icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="32" width="56" height="5" rx="2.5" fill="#7C3AED" opacity="0.4"/>
+            <rect x="14" y="37" width="5" height="18" rx="2" fill="#7C3AED" opacity="0.3"/>
+            <rect x="45" y="37" width="5" height="18" rx="2" fill="#7C3AED" opacity="0.3"/>
+            <circle cx="32" cy="20" r="7" fill="#7C3AED"/>
+            <path d="M24 32 Q26 24 32 22 Q38 24 40 32" stroke="#7C3AED" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M20 26 L26 28" stroke="#7C3AED" stroke-width="3" stroke-linecap="round"/>
+            <path d="M44 26 L38 28" stroke="#7C3AED" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL BÁSICO -->
+    <section class="nivel-section aparato-hero--barra section" id="basico" aria-labelledby="basico-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--basico">⭐ Nivel Básico</span>
+          <h2 class="nivel-header__title" id="basico-titulo">Primeros pasos sobre la barra</h2>
+          <p class="nivel-header__desc">Antes de la barra real, practica todos estos ejercicios en el suelo sobre una línea de cinta. ¡La seguridad primero!</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🚶</div>
+              <h3 class="ejercicio-card__nombre">Caminar sobre la línea</h3>
+              <p class="ejercicio-card__desc">Pega una cinta en el suelo y camina sobre ella poniendo un pie delante del otro sin salirte. Brazos abiertos en cruz para equilibrarte. Practica hacia adelante y hacia atrás.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Esta es la base de todo. En barra real, la línea es de 10 cm. ¡Practica en casa cada día hasta que sea automático!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × largo barra</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">💅</div>
+              <h3 class="ejercicio-card__nombre">Caminar en relevé (puntas)</h3>
+              <p class="ejercicio-card__desc">Camina sobre la línea pero de puntillas (relevé). Sube lo máximo posible en cada paso. Los brazos en segunda posición (abiertos a los lados). Es más fácil equilibrarse cuando más alta está la punta.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "¿Sabes que cuanto más arriba estás en punta, más pequeña es la base de apoyo y paradójicamente es más fácil equilibrarse? ¡Inténtalo!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × largo barra</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦢</div>
+              <h3 class="ejercicio-card__nombre">Arabesco sobre la barra</h3>
+              <p class="ejercicio-card__desc">Parada sobre una pierna en la barra (o línea), extiende la pierna libre hacia atrás subiendo todo lo que puedas. La cadera cuadrada, brazos abiertos o al frente. Aguanta 3 segundos sin moverse.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Fija los ojos en un punto al final de la barra. Si miras hacia abajo, el cuerpo sigue a los ojos y... ¡te caes!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 seg c/pierna</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🎪</div>
+              <h3 class="ejercicio-card__nombre">Subida (monte a la barra)</h3>
+              <p class="ejercicio-card__desc">Desde el trampolín, salta a la barra con los dos pies juntos. Las rodillas deben quedar sobre la barra, luego estira poco a poco hasta estar de pie. Hazlo despacio y con control.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Aterriza con los pies paralelos y en el centro de la barra. Si aterrizas de lado, la barra se mueve y perderás el equilibrio."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 10 repeticiones</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🏄</div>
+              <h3 class="ejercicio-card__nombre">Salida: salto recto</h3>
+              <p class="ejercicio-card__desc">Al final de la barra, salta con los dos pies juntos a la colchoneta de aterrizaje. Brazos arriba durante el vuelo, aterriza con rodillas flexionadas, pies paralelos y pecho levantado. Sin dar un paso extra.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El aterrizaje perfecto es 'clavado': sin dar ningún paso. Practica saltando desde una altura pequeña antes de hacerlo desde la barra real."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 10 repeticiones</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌟</div>
+              <h3 class="ejercicio-card__nombre">Equilibrio en un pie (estático)</h3>
+              <p class="ejercicio-card__desc">De pie en la barra, levanta una pierna al frente a 45°, mantén la posición 5 segundos, luego bájala controlada. Alterna piernas. Este ejercicio mejora el control propioceptivo sobre la barra.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Este ejercicio parece aburrido pero es CLAVE. Cuantas más horas pases con un pie en el aire sobre la barra, más segura te sentirás en competición."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 seg c/pierna</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL INTERMEDIO -->
+    <section class="nivel-section nivel-section--alt aparato-hero--barra section" id="intermedio" aria-labelledby="intermedio-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--intermedio">⭐⭐ Nivel Intermedio</span>
+          <h2 class="nivel-header__title" id="intermedio-titulo">Moverse con fluidez</h2>
+          <p class="nivel-header__desc">Pasos dinámicos, giros y los primeros saltos sobre la barra. ¡Aquí empieza la diversión!</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">💃</div>
+              <h3 class="ejercicio-card__nombre">Chassé sobre la barra</h3>
+              <p class="ejercicio-card__desc">Paso de danza sobre la barra: paso con una pierna, la otra se cierra, y vuelves a abrir. Es un paso galope lateral. Los brazos en primera o segunda posición. Ritmo y fluidez son clave.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El chassé es el paso más común entre elementos en barra. Si lo dominas fluidamente, tu ejercicio parece mucho más elegante."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × largo barra</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🔄</div>
+              <h3 class="ejercicio-card__nombre">Giro pivot (180°)</h3>
+              <p class="ejercicio-card__desc">De pie en relevé sobre una pierna, gira 180° sobre la punta. La pierna libre permanece unida a la pierna de apoyo durante el giro. Termina mirando en sentido contrario al que comenzaste.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Gira en relevé, con los pies bien juntos. Los brazos ayudan: ciérralos rápido al inicio del giro y ábrelos al terminar."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 8 cada lado</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦘</div>
+              <h3 class="ejercicio-card__nombre">Salto tuck sobre la barra</h3>
+              <p class="ejercicio-card__desc">Desde de pie en la barra, salta y lleva las rodillas al pecho. Aterriza en el mismo punto de la barra. El objetivo es que los pies no se muevan del punto de despegue.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El aterrizaje en barra es mucho más difícil que en el suelo. Practica primero en una barra baja con colchoneta muy cerca para ganar confianza."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 8 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">⭐</div>
+              <h3 class="ejercicio-card__nombre">Media luna sobre la barra</h3>
+              <p class="ejercicio-card__desc">Media luna con las manos puestas en la barra una tras otra. Las piernas pasan estiradas y juntas por encima. Es un elemento de transición muy usado en ejercicios de competición.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Las manos deben ir UNA DETRÁS DE LA OTRA a lo largo de la barra, nunca lado a lado. Eso es lo que permite el equilibrio."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🎯</div>
+              <h3 class="ejercicio-card__nombre">Escala (Scale)</h3>
+              <p class="ejercicio-card__desc">De pie sobre una pierna en la barra, dobla el torso hacia adelante al tiempo que subes la pierna libre hacia atrás hasta quedar horizontal o más. El cuerpo forma una línea recta.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "La escala es una posición de exhibición: cuanto más alta sea tu pierna y más horizontal tu cuerpo, más impresionante se ve. ¡Trabaja la flexibilidad!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 seg c/pierna</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌊</div>
+              <h3 class="ejercicio-card__nombre">Balanceo de piernas en pie</h3>
+              <p class="ejercicio-card__desc">De pie en la barra, balancea una pierna adelante y atrás de forma controlada sin perder el equilibrio. La pierna de apoyo siempre en relevé. Aumenta progresivamente la amplitud del balanceo.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Este ejercicio mejora tu propiocepción: la capacidad de tu cuerpo de saber dónde están tus pies sin mirarlos. ¡Es una habilidad que se entrena!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 cada pierna</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL AVANZADO -->
+    <section class="nivel-section aparato-hero--barra section" id="avanzado" aria-labelledby="avanzado-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--avanzado">⭐⭐⭐ Nivel Avanzado</span>
+          <h2 class="nivel-header__title" id="avanzado-titulo">Hacia la competición</h2>
+          <p class="nivel-header__desc">Giros completos, acrobacias y desmontajes con vuelo. Siempre con supervisión y colchonetas de seguridad.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌪️</div>
+              <h3 class="ejercicio-card__nombre">Giro completo (360°)</h3>
+              <p class="ejercicio-card__desc">Giro completo sobre una pierna en relevé. El movimiento es igual que el pivot de 180° pero el cuerpo gira una vuelta entera. Los brazos se cierran rápido al inicio y se abren al terminar.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Para el giro completo sobre la barra necesitas MUCHA práctica de giro en el suelo. No lo fuerces en barra hasta que en el suelo sea perfecto."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 cada lado</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌉</div>
+              <h3 class="ejercicio-card__nombre">Back walkover sobre barra</h3>
+              <p class="ejercicio-card__desc">Desde de pie en la barra, inclínate hacia atrás hasta apoyar las manos y pasa una pierna primero y luego la otra al otro lado. Termina de pie. Requiere mucha flexibilidad de espalda y confianza.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Practica esto en una barra baja con colchoneta debajo MUCHAS veces antes de hacerlo en la barra alta. La confianza se construye poco a poco."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 3 rep asistido</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🚀</div>
+              <h3 class="ejercicio-card__nombre">Desmontaje con rondada</h3>
+              <p class="ejercicio-card__desc">Al final de la barra, ejecuta una rondada (media luna con giro) para caer en la colchoneta mirando hacia la barra. El impulso de piernas al separarse de la barra debe ser fuerte y controlado.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El desmontaje es lo último que ve el juez. ¡Aterriza con fuerza y pecho levantado! Un buen aterrizaje puede compensar un error anterior."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦅</div>
+              <h3 class="ejercicio-card__nombre">Salto split (Gran jeté en barra)</h3>
+              <p class="ejercicio-card__desc">Corre sobre la barra, da un chassé y salta intentando conseguir el espagat en el aire. La pierna delantera va al frente extendida, la pierna trasera atrás extendida. Es uno de los saltos más vistosos de la barra.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "La altura del salto es igual de importante que el espagat. Sin altura no hay tiempo para las piernas. ¡Empuja fuerte con la pierna de impulso!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 cada pierna</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🎭</div>
+              <h3 class="ejercicio-card__nombre">Serie de barra completa</h3>
+              <p class="ejercicio-card__desc">Encadena: monte + chassé + arabesco + giro + media luna sobre la barra + salto + desmontaje. Este es el esquema básico de un ejercicio de competición. La fluidez entre elementos es lo que más puntúa.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Cuando encadenas todo sin parar, sin mirar los pies y sin perder el equilibrio... eso es lo que hace una gimnasta de competición. ¡Practica la serie completa cada sesión!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × serie completa</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#7C3AED;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🧠</div>
+              <h3 class="ejercicio-card__nombre">Visualización mental</h3>
+              <p class="ejercicio-card__desc">Siéntate tranquila, cierra los ojos y visualiza tu ejercicio completo de barra en tu mente. Siente cada paso, cada aterrizaje, cada giro. Las gimnastas de élite usan esta técnica antes de cada competición.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El entrenamiento mental es tan importante como el físico. Si puedes verlo perfectamente en tu mente, tu cuerpo tiene muchas más posibilidades de hacerlo bien."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 5 min antes de entrenar</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSEJO DE EMMA -->
+    <section class="section emma-tip" aria-labelledby="emma-barra-tip">
+      <div class="container">
+        <div class="emma-tip__card reveal">
+          <div class="emma-tip__avatar" aria-hidden="true">
+            <div class="avatar-placeholder">ER</div>
+          </div>
+          <div class="emma-tip__content">
+            <span class="emma-tip__label">💬 Consejo de Emma sobre la barra</span>
+            <blockquote class="emma-tip__quote" id="emma-barra-tip">
+              "La barra requiere valentía. Miedo a caerse lo tiene todo el mundo, pero las que se convierten en grandes gimnastas son las que aprenden a confiar en su cuerpo a pesar del miedo. Practica, practica y practica."
+            </blockquote>
+            <a href="../programa/index.html" class="btn btn--primary btn--sm">
+              Ver mi programa semanal <i data-lucide="chevron-right"></i>
+            </a>
+          </div>
+          <div class="emma-tip__deco" aria-hidden="true">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTROS APARATOS -->
+    <div class="aparatos-strip">
+      <div class="container aparatos-strip__inner">
+        <span class="aparatos-strip__label">Otros aparatos:</span>
+        <a href="suelo.html"      class="aparatos-strip__link strip-suelo">🤸 Suelo</a>
+        <a href="paralelas.html"  class="aparatos-strip__link strip-paralelas">⚡ Paralelas asimétricas</a>
+        <a href="salto.html"      class="aparatos-strip__link strip-salto">🚀 Salto / Plinto</a>
+        <a href="acrobacias.html" class="aparatos-strip__link strip-acrobacias">💪 Acrobacias y físico</a>
+      </div>
+    </div>
+
+    <!-- BANNER MOTIVACIONAL -->
+    <section class="motivacion-banner" aria-hidden="true">
+      <div class="motivacion-banner__track">
+        <span>⚖️ Barra de equilibrio</span>
+        <span>✦ Cada paso con seguridad</span>
+        <span>⭐ Confía en ti misma</span>
+        <span>🏅 Entrena con Emma</span>
+        <span>💜 Valentía y precisión</span>
+        <span>⚖️ Barra de equilibrio</span>
+        <span>✦ Cada paso con seguridad</span>
+        <span>⭐ Confía en ti misma</span>
+        <span>🏅 Entrena con Emma</span>
+        <span>💜 Valentía y precisión</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero · Gimnasia Artística</span>
+      </div>
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="../index.html">Inicio</a>
+        <a href="../programa/index.html">Programa</a>
+        <a href="../consejos/index.html">Consejos</a>
+      </nav>
+      <p class="footer__copy">© 2025 Emma Romero. Hecho con 💜 para gimnastas.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

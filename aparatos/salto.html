@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ejercicios de salto y plinto para gimnasia artística con Emma Romero. Carrera, batida, vuelo y aterrizaje." />
+  <meta property="og:title" content="Salto / Plinto · Emma Romero" />
+  <meta property="og:description" content="Perfecciona tu salto con los ejercicios de Emma: técnica de carrera, batida y vuelo sobre el plinto." />
+  <meta property="og:type" content="website" />
+  <title>Salto / Plinto · Emma Romero · Gimnasia Artística</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="../index.html#aparatos" style="color: var(--color-amber); font-weight:700;">Aparatos</a></li>
+        <li><a href="../programa/index.html">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="../index.html#aparatos">Aparatos</a></li>
+        <li><a href="../programa/index.html">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="aparato-hero aparato-hero--salto" aria-label="Ejercicios de salto y plinto">
+      <div class="aparato-hero__bg" aria-hidden="true">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+      </div>
+      <div class="container aparato-hero__inner">
+        <div class="aparato-hero__text reveal">
+          <nav class="aparato-breadcrumb" aria-label="Migas de pan">
+            <a href="../index.html">Inicio</a>
+            <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            <span>Salto / Plinto</span>
+          </nav>
+          <span class="aparato-hero__tag">🚀 Aparato · Salto / Plinto</span>
+          <h1 class="aparato-hero__title">Ejercicios de<br /><span class="hero__title--accent">Salto y Plinto</span></h1>
+          <p class="aparato-hero__desc">El salto es el aparato más rápido y explosivo de la gimnasia. En menos de 7 segundos, necesitas velocidad, potencia y valor. ¡Cada detalle cuenta!</p>
+          <div class="aparato-skills">
+            <span class="aparato-skill">🏃 Carrera y batida</span>
+            <span class="aparato-skill">💥 Potencia y explosión</span>
+            <span class="aparato-skill">✈️ Técnica de vuelo</span>
+            <span class="aparato-skill">🎯 Aterrizaje clavado</span>
+          </div>
+          <div class="nivel-tabs">
+            <a href="#basico"      class="nivel-tab nivel-tab--basico">⭐ Básico</a>
+            <a href="#intermedio"  class="nivel-tab nivel-tab--intermedio">⭐⭐ Intermedio</a>
+            <a href="#avanzado"    class="nivel-tab nivel-tab--avanzado">⭐⭐⭐ Avanzado</a>
+          </div>
+        </div>
+        <div class="aparato-hero__icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="36" width="24" height="14" rx="3" fill="#F59E0B" opacity="0.4"/>
+            <rect x="14" y="50" width="36" height="5" rx="2" fill="#F59E0B" opacity="0.3"/>
+            <circle cx="32" cy="18" r="7" fill="#F59E0B"/>
+            <path d="M25 36 Q24 26 30 22 Q36 20 38 36" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M22 30 L26 28" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+            <path d="M42 30 L38 28" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL BÁSICO -->
+    <section class="nivel-section aparato-hero--salto section" id="basico" aria-labelledby="basico-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--basico">⭐ Nivel Básico</span>
+          <h2 class="nivel-header__title" id="basico-titulo">La base del salto</h2>
+          <p class="nivel-header__desc">La carrera, la batida y el aterrizaje son los tres pilares. Domínalos antes de ponerte delante del plinto.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🏃</div>
+              <h3 class="ejercicio-card__nombre">Carrera de aproximación</h3>
+              <p class="ejercicio-card__desc">Practica la carrera de 10-15 metros hacia el trampolín. Siempre desde el mismo punto de salida, con el mismo número de pasos. La última zancada es más larga: es la que prepara la batida de dos pies.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Cuenta siempre el mismo número de pasos desde el mismo punto de salida. La consistencia en la carrera es lo que te da consistencia en el salto."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 5 × carrera completa</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦶</div>
+              <h3 class="ejercicio-card__nombre">Batida (hurdle) sobre trampolín</h3>
+              <p class="ejercicio-card__desc">Corre, da la última zancada larga y luego lanza ambos pies juntos al trampolín. La batida es siempre con los DOS pies juntos. Los brazos suben al mismo tiempo para añadir impulso hacia arriba.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "La batida con dos pies juntos no es natural al principio, pero es obligatoria. Practica el hurdle solo, sin plinto, hasta que los dos pies caigan perfectamente al mismo tiempo."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 batidas</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">📦</div>
+              <h3 class="ejercicio-card__nombre">Salto al cajón (box jump)</h3>
+              <p class="ejercicio-card__desc">Sin plinto, salta sobre un banco o cajón bajo con los dos pies a la vez. Aterriza suave con rodillas flexionadas, pies paralelos y pecho levantado. El objetivo es no dar ningún paso al aterrizar.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Las rodillas deben quedar sobre los pies al aterrizar, nunca hacia adentro. Si las rodillas entran al aterrizar, para y corrígelo: ¡es importante para no hacerte daño!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">👐</div>
+              <h3 class="ejercicio-card__nombre">Manos sobre el plinto</h3>
+              <p class="ejercicio-card__desc">Corre, salta al trampolín y apoya las manos en la mesa del plinto. Sin saltar al otro lado: solo practica la colocación de manos. Las manos deben caer en el centro de la mesa, hombros activos.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Las manos en el plinto deben caer justo en el centro. Ni muy cerca (te darás un golpe) ni muy lejos (te faltará fuerza para empujar). Practicaesta técnica muchas veces."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 8 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🎯</div>
+              <h3 class="ejercicio-card__nombre">Aterrizaje perfecto (repetido)</h3>
+              <p class="ejercicio-card__desc">Practica el aterrizaje solo: súbete a una caja o banco y salta al suelo. Objetivo: pies paralelos a la anchura de las caderas, rodillas dobladas, pecho levantado, brazos al frente para equilibrio. SIN dar ningún paso.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El aterrizaje perfecto: pies, rodillas, pecho. Ese es el orden en que debes pensar en el aire. Y si puedes, práctica aterrizar con los ojos cerrados para desarrollar la propiocepción."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🚶</div>
+              <h3 class="ejercicio-card__nombre">Squat vault (salto agrupado)</h3>
+              <p class="ejercicio-card__desc">Corre, batida al trampolín, manos en el plinto y lleva las rodillas entre los brazos para pasar al otro lado en posición agrupada. Es el primer salto real sobre el plinto. Aterriza de pie en la colchoneta.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "¡Tu primer salto real sobre el plinto! Piensa en 'subir' más que en 'pasar'. Con altura tienes tiempo para todo."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 6 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL INTERMEDIO -->
+    <section class="nivel-section nivel-section--alt aparato-hero--salto section" id="intermedio" aria-labelledby="intermedio-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--intermedio">⭐⭐ Nivel Intermedio</span>
+          <h2 class="nivel-header__title" id="intermedio-titulo">Velocidad y bloqueo</h2>
+          <p class="nivel-header__desc">El handspring entra en escena. Aprende a bloquear con los hombros y generar el vuelo post-plinto.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🤲</div>
+              <h3 class="ejercicio-card__nombre">Bloqueo de hombros sobre banco</h3>
+              <p class="ejercicio-card__desc">Apoya las manos en un banco bajo, lanza los pies hacia arriba como en un handspring y empuja fuerte con los hombros hacia arriba al despegar. El bloqueo de hombros es el gesto técnico más importante del salto.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El bloqueo es empujar hacia ARRIBA, no hacia adelante. Imagina que quieres que tus hombros lleguen al techo. Ese empuje genera la altura del vuelo."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 8 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌟</div>
+              <h3 class="ejercicio-card__nombre">Straddle vault (piernas abiertas)</h3>
+              <p class="ejercicio-card__desc">Corre, batida, manos en el plinto y las piernas se abren a los lados del cuerpo (straddle) para pasar. Las manos se apoyan en el centro de la mesa y las piernas pasan estiradas y abiertas por fuera de los brazos.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Abre las piernas TODO lo que puedas. Cuanto más abiertas, más fácil es pasar y más bonito queda. ¡Este salto se ve increíble con buen espagat!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 6 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">💨</div>
+              <h3 class="ejercicio-card__nombre">Potencia de carrera (sprints)</h3>
+              <p class="ejercicio-card__desc">Sprints cortos de 10-15m con salida estática. Trabaja la aceleración inicial (los primeros 5 pasos son los más importantes del salto). Practica también la transición de carrera rápida a la batida de dos pies.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "La velocidad de carrera es la energía que se convierte en altura de vuelo. Una carrera más rápida = un salto más alto. ¡Trabaja la velocidad tanto como la técnica!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 5 × 10m sprints</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🤸</div>
+              <h3 class="ejercicio-card__nombre">Handspring sobre colchoneta inclinada</h3>
+              <p class="ejercicio-card__desc">Practica el handspring (voltereta de manos adelante) sobre una colchoneta inclinada antes del plinto real. Corre, batida, manos en la colchoneta inclinada, empuja y llega al otro lado de pie.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "La colchoneta inclinada hace el handspring más fácil porque te ayuda a llegar al otro lado. Es la progresión ideal antes del plinto real."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 6 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">📏</div>
+              <h3 class="ejercicio-card__nombre">Medición y consistencia de carrera</h3>
+              <p class="ejercicio-card__desc">Marca el punto de salida con cinta. Practica que SIEMPRE el pie de batida caiga en el mismo punto del trampolín. Grábate con el móvil para analizar la consistencia del paso y del punto de batida.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "En competición no tienes tiempo de ajustar la carrera. El patrón debe ser tan automático que puedas hacerlo con los ojos cerrados. ¡Grábate y analiza!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 8 carreras</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🚀</div>
+              <h3 class="ejercicio-card__nombre">Handspring sobre plinto (básico)</h3>
+              <p class="ejercicio-card__desc">Front handspring completo sobre el plinto. La carrera genera la velocidad, la batida la convierte en altura, las manos en el plinto bloquean y redirigen la energía hacia arriba y adelante. Aterriza de pie en la colchoneta.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Cuando hagas el handspring bien, sentirás que el plinto te lanza hacia arriba casi solo. ¡Ese es el objetivo: usar la energía del trampolín y el bloqueo para volar!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL AVANZADO -->
+    <section class="nivel-section aparato-hero--salto section" id="avanzado" aria-labelledby="avanzado-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--avanzado">⭐⭐⭐ Nivel Avanzado</span>
+          <h2 class="nivel-header__title" id="avanzado-titulo">Volar sobre el plinto</h2>
+          <p class="nivel-header__desc">Yamashita, Tsukahara y saltos con rotación. El nivel donde el salto se convierte en vuelo de verdad.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🏔️</div>
+              <h3 class="ejercicio-card__nombre">Yamashita</h3>
+              <p class="ejercicio-card__desc">Handspring con la cadera muy alta al contactar el plinto (cuerpo en pica abierta). Al despegar del plinto, las caderas suben primero y luego el cuerpo se extiende completamente. El vuelo es mucho más alto y largo que un handspring normal.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El Yamashita es como un handspring pero 'roto': las caderas suben primero hacia el techo y luego el cuerpo se extiende. ¡Ese momento de pica es el que te da la altura!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 3 rep (asistido)</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌀</div>
+              <h3 class="ejercicio-card__nombre">Handspring con ½ giro</h3>
+              <p class="ejercicio-card__desc">Tras el bloqueo en el plinto, el cuerpo gira 180° en el vuelo para aterrizar mirando hacia el plinto. El giro se inicia desde los hombros durante el bloqueo. Aterriza de cara al plinto.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El giro en el vuelo se inicia en el momento del bloqueo: una mano empuja más que la otra. Practica primero el giro en colchoneta, luego con trampolín, luego en el plinto."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 3 rep (asistido)</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🎪</div>
+              <h3 class="ejercicio-card__nombre">Tsukahara (introducción)</h3>
+              <p class="ejercicio-card__desc">Rondada al trampolín + contacto lateral del plinto + rotación hacia atrás. Es un salto de entrada invertida. Primero practica la rondada al trampolín sola, luego el contacto lateral, luego la rotación completa.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El Tsukahara es uno de los saltos más bonitos pero también de los más complejos. Aprende BIEN cada parte por separado antes de intentar el salto completo."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ Progresión por fases</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">⚡</div>
+              <h3 class="ejercicio-card__nombre">Entrenamiento de potencia específica</h3>
+              <p class="ejercicio-card__desc">Circuito: saltos al cajón con carga + sprints de 15m + saltos con sentadilla + batidas dobles en trampolín. Este circuito desarrolla la potencia explosiva necesaria para los saltos de competición.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "La potencia no solo se trabaja en el plinto. Este circuito te hará más fuerte y explosiva en todos tus saltos. Hazlo 2-3 veces por semana."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × circuito</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🎬</div>
+              <h3 class="ejercicio-card__nombre">Análisis de vídeo del salto</h3>
+              <p class="ejercicio-card__desc">Graba tu salto completo desde el lateral. Analiza: ángulo de batida, posición de manos, altura del vuelo, posición corporal en el aire, calidad del aterrizaje. El vídeo es la mejor herramienta de corrección.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Lo que crees que estás haciendo y lo que realmente haces pueden ser muy diferentes. El vídeo no miente. Grábate a menudo y sé tu propia entrenadora crítica."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ Análisis cada sesión</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#F59E0B;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🏆</div>
+              <h3 class="ejercicio-card__nombre">Simulación de competición</h3>
+              <p class="ejercicio-card__desc">Practica el salto exactamente como en competición: entrada al área, carrera completa, salto y salida. Solo UNA oportunidad, como en la competición real. Esto trabaja la presión mental y la consistencia.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "En competición tienes un solo intento. Practica siempre como si fuera tu único intento. Si fallas, analiza, pero no repitas inmediatamente: deja que la presión te entrene."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 5 × intento único</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSEJO DE EMMA -->
+    <section class="section emma-tip" aria-labelledby="emma-salto-tip">
+      <div class="container">
+        <div class="emma-tip__card reveal">
+          <div class="emma-tip__avatar" aria-hidden="true">
+            <div class="avatar-placeholder">ER</div>
+          </div>
+          <div class="emma-tip__content">
+            <span class="emma-tip__label">💬 Consejo de Emma sobre el salto</span>
+            <blockquote class="emma-tip__quote" id="emma-salto-tip">
+              "El salto se gana en la carrera, no en el plinto. Una carrera perfecta genera un salto perfecto. Dedica tanto tiempo a trabajar tu carrera como el salto en sí: son inseparables."
+            </blockquote>
+            <a href="../programa/index.html" class="btn btn--primary btn--sm">
+              Ver mi programa semanal <i data-lucide="chevron-right"></i>
+            </a>
+          </div>
+          <div class="emma-tip__deco" aria-hidden="true">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTROS APARATOS -->
+    <div class="aparatos-strip">
+      <div class="container aparatos-strip__inner">
+        <span class="aparatos-strip__label">Otros aparatos:</span>
+        <a href="suelo.html"      class="aparatos-strip__link strip-suelo">🤸 Suelo</a>
+        <a href="barra.html"      class="aparatos-strip__link strip-barra">⚖️ Barra de equilibrio</a>
+        <a href="paralelas.html"  class="aparatos-strip__link strip-paralelas">⚡ Paralelas asimétricas</a>
+        <a href="acrobacias.html" class="aparatos-strip__link strip-acrobacias">💪 Acrobacias y físico</a>
+      </div>
+    </div>
+
+    <!-- BANNER MOTIVACIONAL -->
+    <section class="motivacion-banner" aria-hidden="true">
+      <div class="motivacion-banner__track">
+        <span>🚀 Salto y plinto</span>
+        <span>✦ Velocidad y potencia</span>
+        <span>⭐ Vuela más alto cada día</span>
+        <span>🏅 Entrena con Emma</span>
+        <span>💜 El aterrizaje perfecto llega</span>
+        <span>🚀 Salto y plinto</span>
+        <span>✦ Velocidad y potencia</span>
+        <span>⭐ Vuela más alto cada día</span>
+        <span>🏅 Entrena con Emma</span>
+        <span>💜 El aterrizaje perfecto llega</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero · Gimnasia Artística</span>
+      </div>
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="../index.html">Inicio</a>
+        <a href="../programa/index.html">Programa</a>
+        <a href="../consejos/index.html">Consejos</a>
+      </nav>
+      <p class="footer__copy">© 2025 Emma Romero. Hecho con 💜 para gimnastas.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

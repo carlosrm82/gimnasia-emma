@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Acrobacias y físico general para gimnasia artística con Emma Romero. Fuerza, flexibilidad, pino y técnica acrobática." />
+  <meta property="og:title" content="Acrobacias y Físico · Emma Romero" />
+  <meta property="og:description" content="Construye tu base física con Emma: pino, fuerza, flexibilidad y acrobacias fundamentales." />
+  <meta property="og:type" content="website" />
+  <title>Acrobacias y Físico · Emma Romero · Gimnasia Artística</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="../index.html#aparatos" style="color: var(--color-green); font-weight:700;">Aparatos</a></li>
+        <li><a href="../programa/index.html">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="../index.html#aparatos">Aparatos</a></li>
+        <li><a href="../programa/index.html">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="aparato-hero aparato-hero--acrobacias" aria-label="Acrobacias y físico general">
+      <div class="aparato-hero__bg" aria-hidden="true">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+      </div>
+      <div class="container aparato-hero__inner">
+        <div class="aparato-hero__text reveal">
+          <nav class="aparato-breadcrumb" aria-label="Migas de pan">
+            <a href="../index.html">Inicio</a>
+            <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            <span>Acrobacias y físico</span>
+          </nav>
+          <span class="aparato-hero__tag">💪 Físico general · Acrobacias</span>
+          <h1 class="aparato-hero__title">Acrobacias<br /><span class="hero__title--accent">y Físico</span></h1>
+          <p class="aparato-hero__desc">La base de todo en gimnasia. Sin fuerza, flexibilidad y técnica acrobática, los demás aparatos no son posibles. ¡Construye tu cuerpo de gimnasta!</p>
+          <div class="aparato-skills">
+            <span class="aparato-skill">🏋️ Fuerza funcional</span>
+            <span class="aparato-skill">🧘 Flexibilidad</span>
+            <span class="aparato-skill">🤸 Pino y acrobacias</span>
+            <span class="aparato-skill">🛡️ Prevención de lesiones</span>
+          </div>
+          <div class="nivel-tabs">
+            <a href="#fuerza"        class="nivel-tab nivel-tab--basico">💪 Fuerza</a>
+            <a href="#flexibilidad"  class="nivel-tab nivel-tab--intermedio">🧘 Flexibilidad</a>
+            <a href="#acrobacias"    class="nivel-tab nivel-tab--avanzado">🤸 Acrobacias</a>
+          </div>
+        </div>
+        <div class="aparato-hero__icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="14" r="7" fill="#10B981"/>
+            <path d="M20 28 Q20 20 32 21 Q44 20 44 28 Q44 36 36 40 L32 50 L28 40 Q20 36 20 28Z" fill="#10B981" opacity="0.4"/>
+            <path d="M16 36 L22 32" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+            <path d="M48 36 L42 32" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+            <path d="M26 50 Q28 55 24 58" stroke="#10B981" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M38 50 Q36 55 40 58" stroke="#10B981" stroke-width="3" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUERZA -->
+    <section class="nivel-section aparato-hero--acrobacias section" id="fuerza" aria-labelledby="fuerza-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--basico">💪 Fuerza funcional</span>
+          <h2 class="nivel-header__title" id="fuerza-titulo">Construye tu motor</h2>
+          <p class="nivel-header__desc">La fuerza de una gimnasta no es solo muscular: es control, tensión y capacidad de mantener posiciones. Estos ejercicios lo trabajan todo.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🪨</div>
+              <h3 class="ejercicio-card__nombre">Hollow body hold</h3>
+              <p class="ejercicio-card__desc">Tumbada boca arriba, brazos extendidos detrás de la cabeza, piernas juntas y estiradas levantadas a unos 30cm del suelo. La zona lumbar completamente pegada al suelo. Aguanta la posición respirando con calma.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Si se te despega la espalda del suelo, sube un poco más las piernas. La espalda pegada es obligatoria. Este es el ejercicio de core más importante de la gimnasia."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 20 seg</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">💪 Fuerza</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦸</div>
+              <h3 class="ejercicio-card__nombre">Arch hold (superman)</h3>
+              <p class="ejercicio-card__desc">Tumbada boca abajo, levanta al mismo tiempo brazos, pecho y piernas del suelo. Los glúteos apretados, mira hacia el suelo (no hacia adelante). Esta posición trabaja toda la cadena posterior.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Aprieta los glúteos al máximo y mira al suelo para proteger el cuello. La posición 'arch' es el complemento del 'hollow': necesitas ambas para ser una gimnasta completa."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 15 seg</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">💪 Fuerza</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🤜</div>
+              <h3 class="ejercicio-card__nombre">Flexiones de gimnasta</h3>
+              <p class="ejercicio-card__desc">Flexiones con las manos giradas hacia fuera (dedos apuntando a los lados) y los codos pegados al cuerpo al bajar. Más difíciles que las flexiones normales pero específicas para los hombros de gimnasia.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Los codos deben rozar las costillas al bajar, no abrirse hacia los lados. Ese detalle activa los tríceps y dorsales, los músculos clave para todos los aparatos."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 8 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">💪 Fuerza</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦵</div>
+              <h3 class="ejercicio-card__nombre">Elevaciones de piernas colgada</h3>
+              <p class="ejercicio-card__desc">Colgada de una barra, sube las piernas juntas y estiradas hasta la horizontal o más arriba. Baja de forma lenta y controlada. Sin balancearte. Progresión: rodillas dobladas → piernas a 90° → piernas a la barra.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Controla la bajada tanto como la subida. Bajar lento activa los músculos igual que subir. ¡La gravedad también entrena!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">💪 Fuerza</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">📐</div>
+              <h3 class="ejercicio-card__nombre">V-sit (posición en L)</h3>
+              <p class="ejercicio-card__desc">Sentada en el suelo, piernas juntas y estiradas hacia arriba formando una V o una L. Las manos en el suelo a los lados. Apoya lo menos posible con las manos. Aguanta la posición.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Empuja los muslos hacia la cara para aumentar la compresión de cadera. Es la posición base del L-sit y es requisito para muchos elementos de paralelas y suelo."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 seg</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">💪 Fuerza</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🔩</div>
+              <h3 class="ejercicio-card__nombre">Circuito de fuerza específica</h3>
+              <p class="ejercicio-card__desc">Sin descanso: 10 hollow body rocks + 10 arch rocks + 10 flexiones gimnasta + 10 elevaciones de piernas colgada. Descanso 60 seg. Repite 3 veces. Este circuito simula la demanda real de un ejercicio de competición.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Hacer los ejercicios seguidos sin descanso reproduce lo que tu cuerpo siente en competición. ¡Eso es entrenar específicamente!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × circuito</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">💪 Fuerza</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FLEXIBILIDAD -->
+    <section class="nivel-section nivel-section--alt aparato-hero--acrobacias section" id="flexibilidad" aria-labelledby="flex-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--intermedio">🧘 Flexibilidad</span>
+          <h2 class="nivel-header__title" id="flex-titulo">Más flexible, mejor gimnasta</h2>
+          <p class="nivel-header__desc">La flexibilidad se gana con constancia diaria, no con sesiones largas esporádicas. Dedica 15 minutos cada día y verás resultados en semanas.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦿</div>
+              <h3 class="ejercicio-card__nombre">Espagat frontal</h3>
+              <p class="ejercicio-card__desc">Desliza una pierna al frente y la otra atrás. Mantén la cadera cuadrada (no la abras lateralmente). Aguanta en el punto más profundo que puedas sin dolor. Respira hondo y al exhalar profundiza ligeramente.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Respira despacio: al inhalar el cuerpo se tensa, al exhalar se relaja y puedes profundizar un centímetro más. Nunca fuerces con dolor: el estiramiento debe ser intenso pero no doler."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 30 seg c/lado</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">🧘 Flexibilidad</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦋</div>
+              <h3 class="ejercicio-card__nombre">Espagat lateral (gran écart)</h3>
+              <p class="ejercicio-card__desc">Separa las piernas a los lados manteniéndolas estiradas y con los pies en flexión (no en punta). La cadera completamente hacia adelante. Deja que tu propio peso te baje gradualmente. No fuerces.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Déjate caer con tu propio peso. Si pones las manos en el suelo y empujas hacia abajo, estás forzando y puedes lesionarte. Relax y respiración son la clave."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 30 seg</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">🧘 Flexibilidad</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌉</div>
+              <h3 class="ejercicio-card__nombre">Puente completo (backbend)</h3>
+              <p class="ejercicio-card__desc">Desde tumbada, sube al puente con los pies y las manos. Empuja el pecho entre los brazos hacia adelante y las caderas hacia arriba. Las piernas rectas si es posible. Aguanta la posición relajando los hombros.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Un puente alto y bonito habla de una espalda y unos hombros muy flexibles. Practica empujar el pecho entre los brazos: eso es lo que abre la espalda de verdad."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 seg</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">🧘 Flexibilidad</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🙆</div>
+              <h3 class="ejercicio-card__nombre">Flexibilidad de hombros</h3>
+              <p class="ejercicio-card__desc">Con una goma o toalla, estiramiento de hombros por encima de la cabeza: sostén la goma con ambas manos separadas, lleva los brazos desde adelante hasta detrás de la cabeza y de vuelta. Progresivamente acerca las manos.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Los hombros son el centro de todo en gimnasia. En paralelas, en suelo, en barra... todo pasa por los hombros. ¡Cuídalos y trabájalos cada día sin excepción!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 rep + 30 seg</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">🧘 Flexibilidad</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🥞</div>
+              <h3 class="ejercicio-card__nombre">Pancake stretch</h3>
+              <p class="ejercicio-card__desc">Sentada con las piernas abiertas al máximo y estiradas, inclina el torso hacia adelante intentando que el pecho toque el suelo. Las manos al frente, no en las piernas. Aguanta en el punto más bajo.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El pancake es el estiramiento más completo para la parte inferior: aductores, isquiotibiales y cadera todo a la vez. Hazlo cada día y en 6 semanas notarás una diferencia increíble."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 30 seg</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">🧘 Flexibilidad</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">📅</div>
+              <h3 class="ejercicio-card__nombre">Rutina de flexibilidad diaria</h3>
+              <p class="ejercicio-card__desc">15 minutos cada día: 2 min calentamiento dinámico + espagat frontal ambos lados + espagat lateral + puente + hombros + pancake. Hazlo siempre a la misma hora (ideal: antes de dormir, cuando el cuerpo está caliente del día).</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "La flexibilidad es la única capacidad física que mejora con pocos minutos diarios. 15 minutos cada día valen MÁS que una hora de estiramiento una vez a la semana. ¡La constancia gana siempre!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 15 min / día</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">🧘 Flexibilidad</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ACROBACIAS -->
+    <section class="nivel-section aparato-hero--acrobacias section" id="acrobacias" aria-labelledby="acro-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--avanzado">🤸 Acrobacias</span>
+          <h2 class="nivel-header__title" id="acro-titulo">Técnica acrobática</h2>
+          <p class="nivel-header__desc">Desde el pino hasta la rueda atrás. Las acrobacias son la base de todos los aparatos: trabájalas despacio y con precisión.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🗼</div>
+              <h3 class="ejercicio-card__nombre">Progresión de pino (handstand)</h3>
+              <p class="ejercicio-card__desc">Fase 1: pino en pared 20 seg. Fase 2: pino en pared soltando una mano. Fase 3: pino libre con ayuda. Fase 4: pino libre solo. Trabaja una fase hasta dominarla antes de pasar a la siguiente.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El pino es LA habilidad más importante de la gimnasia. Si tu pino es perfecto, todo lo demás mejora. Dedica 5-10 minutos a él en cada sesión, sin excepción."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 5 × máx. posible</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">🤸 Acrobacia</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">⭐</div>
+              <h3 class="ejercicio-card__nombre">Media luna con extensión total</h3>
+              <p class="ejercicio-card__desc">Media luna con las piernas completamente estiradas y juntas en el punto más alto. Es lo que diferencia una media luna de competición de una de principiante. Trabaja la técnica aunque ya sepas hacerla.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Una media luna con las piernas bien estiradas y juntas en el punto más alto es MUCHO más difícil que con piernas dobladas o separadas. ¡Esa es la media luna de competición!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 8 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">🤸 Acrobacia</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌉</div>
+              <h3 class="ejercicio-card__nombre">Patada de puente (bridge kickover)</h3>
+              <p class="ejercicio-card__desc">Desde el puente, da una patada con una pierna hacia arriba y adelante para llegar de pie al otro lado. Es la versión simplificada del back walkover. Practica la patada primero sin llevar el cuerpo completo.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Domina esto antes de intentar la rueda atrás. La mecánica es la misma: patada de piernas desde el puente para ponerse de pie. ¡Es el mejor ejercicio preparatorio!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 cada pierna</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">🤸 Acrobacia</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🔄</div>
+              <h3 class="ejercicio-card__nombre">Rodada adelante a pino</h3>
+              <p class="ejercicio-card__desc">Haz una rodada adelante que termine en un pino, sin tocar los pies en el suelo entre medias. La rodada termina con las piernas levantadas y el impulso de manos te envía directamente al pino. Necesita mucho core.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Al final de la rodada, empuja el suelo con fuerza como si quisieras alejarte de él. ¡Ese empuje es el que te manda al pino! La velocidad de la rodada también ayuda."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">🤸 Acrobacia</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🚶</div>
+              <h3 class="ejercicio-card__nombre">Front walkover</h3>
+              <p class="ejercicio-card__desc">Desde de pie, estira los brazos, da un paso adelante y baja hacia un handstand con las piernas abiertas, pasando una pierna primero y luego la otra para terminar de pie. Necesita espagat y pino.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Para el front walkover necesitas dos cosas: pino libre y espagat. Si tienes ambas, el walkover viene solo con un poco de práctica. Trabaja primero esas dos bases."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep (asistido)</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">🤸 Acrobacia</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#10B981;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">⚡</div>
+              <h3 class="ejercicio-card__nombre">Flic-flac (back handspring)</h3>
+              <p class="ejercicio-card__desc">Desde de pie, impulsa las caderas hacia atrás y arriba, los brazos te llevan hacia atrás, las manos tocan el suelo un instante y el impulso de hombros te devuelve a de pie. El elemento más practicado del suelo.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El flic-flac da mucho miedo al principio porque vas hacia atrás sin ver. Trabájalo SIEMPRE con colchoneta de apoyo en la espalda y la ayuda de un entrenador hasta que tu cuerpo lo automatice."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep (asistido)</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">🤸 Acrobacia</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSEJO DE EMMA -->
+    <section class="section emma-tip" aria-labelledby="emma-acro-tip">
+      <div class="container">
+        <div class="emma-tip__card reveal">
+          <div class="emma-tip__avatar" aria-hidden="true">
+            <div class="avatar-placeholder">ER</div>
+          </div>
+          <div class="emma-tip__content">
+            <span class="emma-tip__label">💬 Consejo de Emma sobre el físico</span>
+            <blockquote class="emma-tip__quote" id="emma-acro-tip">
+              "Una gimnasta fuerte y flexible rinde mejor en todos los aparatos y se lesiona mucho menos. No saltes pasos: construye tu base física cada día y los aparatos vendrán solos. El físico es tu mejor inversión."
+            </blockquote>
+            <a href="../programa/index.html" class="btn btn--primary btn--sm">
+              Ver mi programa semanal <i data-lucide="chevron-right"></i>
+            </a>
+          </div>
+          <div class="emma-tip__deco" aria-hidden="true">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTROS APARATOS -->
+    <div class="aparatos-strip">
+      <div class="container aparatos-strip__inner">
+        <span class="aparatos-strip__label">Otros aparatos:</span>
+        <a href="suelo.html"      class="aparatos-strip__link strip-suelo">🤸 Suelo</a>
+        <a href="barra.html"      class="aparatos-strip__link strip-barra">⚖️ Barra de equilibrio</a>
+        <a href="paralelas.html"  class="aparatos-strip__link strip-paralelas">⚡ Paralelas asimétricas</a>
+        <a href="salto.html"      class="aparatos-strip__link strip-salto">🚀 Salto / Plinto</a>
+      </div>
+    </div>
+
+    <!-- BANNER MOTIVACIONAL -->
+    <section class="motivacion-banner" aria-hidden="true">
+      <div class="motivacion-banner__track">
+        <span>💪 Acrobacias y físico</span>
+        <span>✦ Fuerza, flex y técnica</span>
+        <span>⭐ El pino cada día</span>
+        <span>🏅 Entrena con Emma</span>
+        <span>💜 Tu cuerpo es tu aparato</span>
+        <span>💪 Acrobacias y físico</span>
+        <span>✦ Fuerza, flex y técnica</span>
+        <span>⭐ El pino cada día</span>
+        <span>🏅 Entrena con Emma</span>
+        <span>💜 Tu cuerpo es tu aparato</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero · Gimnasia Artística</span>
+      </div>
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="../index.html">Inicio</a>
+        <a href="../programa/index.html">Programa</a>
+        <a href="../consejos/index.html">Consejos</a>
+      </nav>
+      <p class="footer__copy">© 2025 Emma Romero. Hecho con 💜 para gimnastas.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

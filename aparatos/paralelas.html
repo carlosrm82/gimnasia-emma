@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ejercicios de paralelas asimétricas para gimnasia artística con Emma Romero. Kip, círculos, castañas y salidas." />
+  <meta property="og:title" content="Paralelas Asimétricas · Emma Romero" />
+  <meta property="og:description" content="Domina las paralelas con los ejercicios de Emma: colgados, kip, círculos y salidas en vuelo." />
+  <meta property="og:type" content="website" />
+  <title>Paralelas Asimétricas · Emma Romero · Gimnasia Artística</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="../index.html#aparatos" style="color: var(--color-sky); font-weight:700;">Aparatos</a></li>
+        <li><a href="../programa/index.html">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="../index.html#aparatos">Aparatos</a></li>
+        <li><a href="../programa/index.html">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="aparato-hero aparato-hero--paralelas" aria-label="Ejercicios de paralelas asimétricas">
+      <div class="aparato-hero__bg" aria-hidden="true">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+      </div>
+      <div class="container aparato-hero__inner">
+        <div class="aparato-hero__text reveal">
+          <nav class="aparato-breadcrumb" aria-label="Migas de pan">
+            <a href="../index.html">Inicio</a>
+            <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            <span>Paralelas asimétricas</span>
+          </nav>
+          <span class="aparato-hero__tag">⚡ Aparato · Paralelas asimétricas</span>
+          <h1 class="aparato-hero__title">Ejercicios de<br /><span class="hero__title--accent">Paralelas asimétricas</span></h1>
+          <p class="aparato-hero__desc">Las paralelas asimétricas combinan fuerza, técnica y vuelo. Cada elemento requiere timing perfecto y confianza en tu agarre. ¡Entrena con inteligencia!</p>
+          <div class="aparato-skills">
+            <span class="aparato-skill">💪 Fuerza de agarre</span>
+            <span class="aparato-skill">🔄 Círculos y kip</span>
+            <span class="aparato-skill">🚀 Salidas en vuelo</span>
+            <span class="aparato-skill">🎯 Timing y técnica</span>
+          </div>
+          <div class="nivel-tabs">
+            <a href="#basico"      class="nivel-tab nivel-tab--basico">⭐ Básico</a>
+            <a href="#intermedio"  class="nivel-tab nivel-tab--intermedio">⭐⭐ Intermedio</a>
+            <a href="#avanzado"    class="nivel-tab nivel-tab--avanzado">⭐⭐⭐ Avanzado</a>
+          </div>
+        </div>
+        <div class="aparato-hero__icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="18" width="56" height="4" rx="2" fill="#0EA5E9" opacity="0.3"/>
+            <rect x="4" y="34" width="56" height="4" rx="2" fill="#0EA5E9" opacity="0.5"/>
+            <rect x="10" y="38" width="4" height="18" rx="2" fill="#0EA5E9" opacity="0.3"/>
+            <rect x="50" y="38" width="4" height="18" rx="2" fill="#0EA5E9" opacity="0.3"/>
+            <rect x="10" y="22" width="4" height="12" rx="2" fill="#0EA5E9" opacity="0.3"/>
+            <rect x="50" y="22" width="4" height="12" rx="2" fill="#0EA5E9" opacity="0.3"/>
+            <circle cx="32" cy="28" r="6" fill="#0EA5E9"/>
+            <path d="M26 18 Q28 12 32 10 Q38 12 38 18" stroke="#0EA5E9" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL BÁSICO -->
+    <section class="nivel-section aparato-hero--paralelas section" id="basico" aria-labelledby="basico-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--basico">⭐ Nivel Básico</span>
+          <h2 class="nivel-header__title" id="basico-titulo">Conoce la barra</h2>
+          <p class="nivel-header__desc">Empieza por entender cómo funcionar en la barra: agarre, posición de cuerpo y primeros movimientos.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🏋️</div>
+              <h3 class="ejercicio-card__nombre">Colgado activo</h3>
+              <p class="ejercicio-card__desc">Cuélgate de la barra alta con los brazos extendidos. Activa los omóplatos tirándolos hacia abajo (no encojas los hombros). El cuerpo en posición hollow: abdomen activado, ligeramente curvado hacia adelante.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Un colgado activo no es colgar muerta. Activa los omóplatos hacia abajo: es la posición de fuerza y es la que protege tus hombros."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 15 seg</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌊</div>
+              <h3 class="ejercicio-card__nombre">Balanceo colgada (swing)</h3>
+              <p class="ejercicio-card__desc">Desde el colgado activo, balancea el cuerpo adelante (hollow: cuerpo ligeramente curvo al frente) y atrás (arch: espalda arqueada). El movimiento viene de las caderas, no de las rodillas.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El balanceo correcto es como un péndulo: hollow adelante, arch atrás. Este patrón es la base de TODOS los elementos en barras."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 balanceos</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">💪</div>
+              <h3 class="ejercicio-card__nombre">Dominadas (pull-ups) asistidas</h3>
+              <p class="ejercicio-card__desc">Colgada de la barra, tira hacia arriba hasta que el pecho llegue a la altura de la barra. Los codos van pegados al cuerpo, no hacia los lados. Baja de forma controlada, no caigas.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Jala los codos hacia las caderas, no hacia las orejas. Es un detalle técnico que marca la diferencia entre hacer el ejercicio bien o mal."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep (asistidas)</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🎠</div>
+              <h3 class="ejercicio-card__nombre">Círculo de cadera adelante</h3>
+              <p class="ejercicio-card__desc">Desde la posición de apoyo (cadera en la barra baja, piernas colgando delante), balancéate hacia adelante y hacia abajo rodeando la barra con las caderas. El cuerpo pegado a la barra todo el tiempo.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "¡El cuerpo pegado a la barra! Si te separas, perderás velocidad y no completarás el círculo. Imagina que la barra y tú sois uno."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 6 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦵</div>
+              <h3 class="ejercicio-card__nombre">Elevaciones de piernas colgada</h3>
+              <p class="ejercicio-card__desc">Colgada de la barra, levanta las piernas juntas y estiradas hasta la horizontal (90°) o más. Baja de forma controlada sin balancearte. Este ejercicio fortalece el core para todos los elementos.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Controla también la bajada: la gravedad es tu entrenadora. Bajar lento es aún más difícil que subir, ¡y te hace más fuerte!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🚪</div>
+              <h3 class="ejercicio-card__nombre">Salida con vuelo desde barra baja</h3>
+              <p class="ejercicio-card__desc">De pie en la barra baja, agárrate a los pies con las manos o en la barra, impulsa con los pies y salta a la colchoneta. Mira al frente, brazos arriba en el vuelo, aterriza estable.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Mira siempre al frente al soltar la barra, ¡nunca al suelo! Tu mirada guía tu posición en el aire."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 10 repeticiones</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL INTERMEDIO -->
+    <section class="nivel-section nivel-section--alt aparato-hero--paralelas section" id="intermedio" aria-labelledby="intermedio-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--intermedio">⭐⭐ Nivel Intermedio</span>
+          <h2 class="nivel-header__title" id="intermedio-titulo">Técnica y timing</h2>
+          <p class="nivel-header__desc">El kip, el círculo atrás y los primeros vuelos entre barras. La técnica importa más que la fuerza.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🎣</div>
+              <h3 class="ejercicio-card__nombre">Kip (glide kip)</h3>
+              <p class="ejercicio-card__desc">Balancea hacia adelante en el colgado, lleva los pies a la barra (pica), y en el momento en que los pies pasan por debajo de la barra, extiende las caderas hacia arriba con fuerza para llegar al apoyo.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El kip tiene un momento exacto: cuando los pies pasan por debajo de la barra, ESE es el instante de empujar. Ni antes ni después. El timing lo es todo."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep (asistido)</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🔄</div>
+              <h3 class="ejercicio-card__nombre">Círculo de cadera atrás</h3>
+              <p class="ejercicio-card__desc">Desde el apoyo (cadera en barra), balancéate hacia atrás y hacia arriba, rodeando la barra por detrás. La velocidad en la parte alta es lo que permite completar el círculo. Cuerpo siempre pegado a la barra.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Cuando tu cuerpo esté en la posición más alta (12 en punto), ese es el momento de más velocidad. ¡No la pierdas separándote de la barra!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">📐</div>
+              <h3 class="ejercicio-card__nombre">Castaña a horizontal</h3>
+              <p class="ejercicio-card__desc">Desde el apoyo en la barra, balancea las piernas hacia atrás y arriba hasta llegar a la horizontal. Las piernas juntas y estiradas. Aprieta glúteos y core al bajar para no caer de golpe.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El objetivo final de la castaña es llegar al pino. Cada día intenta llegar un centímetro más arriba. ¡La constancia gana a la fuerza bruta!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 8 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🤸</div>
+              <h3 class="ejercicio-card__nombre">Posición de apoyo invertido (straddle)</h3>
+              <p class="ejercicio-card__desc">Desde la barra baja, sube las piernas abiertas (piernas separadas) hasta que los pies queden a la altura de la barra o más arriba. Agarra la barra con las manos, equilibra el peso.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Esta posición sobre la barra te da confianza en la inversión. Es el primer paso antes de trabajar el pino sobre barras."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🎪</div>
+              <h3 class="ejercicio-card__nombre">Cambio de barra baja a alta</h3>
+              <p class="ejercicio-card__desc">Desde la barra baja, crea impulso con el balanceo y en el punto más alto del movimiento hacia adelante, suelta la barra baja y alcanza la barra alta con ambas manos. Los hombros se mantienen firmes al soltar.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El truco está en no tener miedo al momento de soltar. Practica primero con ayuda de un entrenador que sostenga tu cadera."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep (asistido)</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🏊</div>
+              <h3 class="ejercicio-card__nombre">Serie kip + castaña</h3>
+              <p class="ejercicio-card__desc">Encadena: kip para subir al apoyo + castaña a horizontal. Sin parar entre un elemento y el siguiente. La castaña aprovecha la velocidad del kip para llegar más arriba. Así se trabaja la fluidez de serie.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "En competición no hay paradas. Practica las transiciones tanto como los elementos individuales: son las que marcan la diferencia."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 4 series</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL AVANZADO -->
+    <section class="nivel-section aparato-hero--paralelas section" id="avanzado" aria-labelledby="avanzado-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--avanzado">⭐⭐⭐ Nivel Avanzado</span>
+          <h2 class="nivel-header__title" id="avanzado-titulo">El vuelo en paralelas</h2>
+          <p class="nivel-header__desc">Castaña a pino, salida libre y series completas. El nivel donde las paralelas se convierten en tu aparato favorito.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🏗️</div>
+              <h3 class="ejercicio-card__nombre">Castaña a vertical (handstand on bar)</h3>
+              <p class="ejercicio-card__desc">Castañas hasta llegar al pino completo sobre la barra. Las piernas por encima de la cabeza, brazos extendidos, hombros empujando activamente. Es la habilidad más importante en paralelas.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El pino sobre la barra es la habilidad más valorada en paralelas. Si lo tienes, todo lo demás mejora automáticamente porque genera más velocidad para los siguientes elementos."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep (asistido)</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🎡</div>
+              <h3 class="ejercicio-card__nombre">Sole circle (círculo de puntas)</h3>
+              <p class="ejercicio-card__desc">Con los pies en la barra (puntas apoyadas), rodea la barra en un círculo completo. Los brazos no sueltan y los pies mantienen el contacto durante toda la rotación. Requiere mucha fuerza de agarre.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Agarra con FUERZA y mantén el cuerpo tenso como una tabla. Si el cuerpo se dobla por la cintura, perderás la velocidad para completar el círculo."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🕊️</div>
+              <h3 class="ejercicio-card__nombre">Salida libre (flyaway)</h3>
+              <p class="ejercicio-card__desc">Al final de la serie, en el punto más alto del balanceo hacia adelante, suelta la barra, haz una pirueta o un salto mortal atrás y aterriza en la colchoneta. Es el dismount más emocionante.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "La salida libre da miedo la primera vez pero es uno de los momentos más bonitos de la gimnasia. Trabájala siempre con colchoneta alta y ayuda de entrenador."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep (asistido)</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌀</div>
+              <h3 class="ejercicio-card__nombre">Giro de cadera libre</h3>
+              <p class="ejercicio-card__desc">Como el círculo de cadera, pero separándose de la barra durante la parte superior del círculo (el cuerpo no toca la barra mientras está arriba). Requiere mayor velocidad y control de hombros.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Es el mismo movimiento que el círculo pegado, pero más rápido y con los hombros más activos. Primero máster del círculo pegado, luego esto."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🎭</div>
+              <h3 class="ejercicio-card__nombre">Serie completa de paralelas</h3>
+              <p class="ejercicio-card__desc">Monte + kip + castaña + círculo atrás + cambio de barra + kip barra alta + castaña + salida libre. Esta es la estructura básica de una serie de competición. Fluidez entre elementos es lo que más puntúa.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Una serie de paralelas tiene que fluir como agua. Si tienes que parar entre elementos, es que cada uno no está suficientemente automatizado todavía. ¡Sigue trabajando en los eslabones más débiles!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × serie completa</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#0EA5E9;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🔧</div>
+              <h3 class="ejercicio-card__nombre">Condicionamiento específico</h3>
+              <p class="ejercicio-card__desc">Circuito: 10 dominadas + 10 dips en paralelas o sillas + 30s hollow body + 10 elevaciones de piernas. Este circuito desarrolla exactamente la fuerza necesaria para los aparatos.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "La fuerza específica para paralelas viene de hacer paralelas y ejercicios similares. No es solo ir al gimnasio a levantar pesas. ¡Trabaja los músculos como los usas en la barra!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × circuito completo</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSEJO DE EMMA -->
+    <section class="section emma-tip" aria-labelledby="emma-paralelas-tip">
+      <div class="container">
+        <div class="emma-tip__card reveal">
+          <div class="emma-tip__avatar" aria-hidden="true">
+            <div class="avatar-placeholder">ER</div>
+          </div>
+          <div class="emma-tip__content">
+            <span class="emma-tip__label">💬 Consejo de Emma sobre las paralelas</span>
+            <blockquote class="emma-tip__quote" id="emma-paralelas-tip">
+              "Las paralelas asimétricas son el aparato donde más se nota la diferencia entre una gimnasta con técnica y una que solo tiene fuerza. La técnica correcta te permite hacer más con menos esfuerzo. ¡Aprende bien los fundamentos!"
+            </blockquote>
+            <a href="../programa/index.html" class="btn btn--primary btn--sm">
+              Ver mi programa semanal <i data-lucide="chevron-right"></i>
+            </a>
+          </div>
+          <div class="emma-tip__deco" aria-hidden="true">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTROS APARATOS -->
+    <div class="aparatos-strip">
+      <div class="container aparatos-strip__inner">
+        <span class="aparatos-strip__label">Otros aparatos:</span>
+        <a href="suelo.html"      class="aparatos-strip__link strip-suelo">🤸 Suelo</a>
+        <a href="barra.html"      class="aparatos-strip__link strip-barra">⚖️ Barra de equilibrio</a>
+        <a href="salto.html"      class="aparatos-strip__link strip-salto">🚀 Salto / Plinto</a>
+        <a href="acrobacias.html" class="aparatos-strip__link strip-acrobacias">💪 Acrobacias y físico</a>
+      </div>
+    </div>
+
+    <!-- BANNER MOTIVACIONAL -->
+    <section class="motivacion-banner" aria-hidden="true">
+      <div class="motivacion-banner__track">
+        <span>⚡ Paralelas asimétricas</span>
+        <span>✦ Vuela entre las barras</span>
+        <span>⭐ Técnica y confianza</span>
+        <span>🏅 Entrena con Emma</span>
+        <span>💜 El kip perfecto llega con práctica</span>
+        <span>⚡ Paralelas asimétricas</span>
+        <span>✦ Vuela entre las barras</span>
+        <span>⭐ Técnica y confianza</span>
+        <span>🏅 Entrena con Emma</span>
+        <span>💜 El kip perfecto llega con práctica</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero · Gimnasia Artística</span>
+      </div>
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="../index.html">Inicio</a>
+        <a href="../programa/index.html">Programa</a>
+        <a href="../consejos/index.html">Consejos</a>
+      </nav>
+      <p class="footer__copy">© 2025 Emma Romero. Hecho con 💜 para gimnastas.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

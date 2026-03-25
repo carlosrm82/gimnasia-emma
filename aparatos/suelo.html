@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ejercicios de suelo para gimnasia artística con Emma Romero. Ruedas, verticales, saltos, series acrobáticas y más." />
+  <meta property="og:title" content="Ejercicios de Suelo · Emma Romero" />
+  <meta property="og:description" content="Mejora tu suelo con los ejercicios de Emma: desde ruedas hasta series acrobáticas." />
+  <meta property="og:type" content="website" />
+  <title>Suelo · Emma Romero · Gimnasia Artística</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="../index.html#aparatos" style="color: var(--color-accent); font-weight:700;">Aparatos</a></li>
+        <li><a href="../programa/index.html">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="../index.html#aparatos">Aparatos</a></li>
+        <li><a href="../programa/index.html">Programa</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="aparato-hero aparato-hero--suelo" aria-label="Ejercicios de suelo">
+      <div class="aparato-hero__bg" aria-hidden="true">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+      </div>
+      <div class="container aparato-hero__inner">
+        <div class="aparato-hero__text reveal">
+          <nav class="aparato-breadcrumb" aria-label="Migas de pan">
+            <a href="../index.html">Inicio</a>
+            <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            <span>Suelo</span>
+          </nav>
+          <span class="aparato-hero__tag">🤸 Aparato · Suelo</span>
+          <h1 class="aparato-hero__title">Ejercicios de<br /><span class="hero__title--accent">Suelo</span></h1>
+          <p class="aparato-hero__desc">El suelo es donde todo empieza. Trabaja tus ruedas, verticales, saltos y series acrobáticas para brillar en la competición.</p>
+          <div class="aparato-skills">
+            <span class="aparato-skill">🔄 Ruedas y rodadas</span>
+            <span class="aparato-skill">🤸 Acrobacias</span>
+            <span class="aparato-skill">💃 Saltos y giros</span>
+            <span class="aparato-skill">🧘 Flexibilidad</span>
+          </div>
+          <div class="nivel-tabs">
+            <a href="#basico"      class="nivel-tab nivel-tab--basico">⭐ Básico</a>
+            <a href="#intermedio"  class="nivel-tab nivel-tab--intermedio">⭐⭐ Intermedio</a>
+            <a href="#avanzado"    class="nivel-tab nivel-tab--avanzado">⭐⭐⭐ Avanzado</a>
+          </div>
+        </div>
+        <div class="aparato-hero__icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="48" width="48" height="6" rx="3" fill="#F43F5E" opacity="0.3"/>
+            <circle cx="32" cy="22" r="8" fill="#F43F5E"/>
+            <path d="M20 36 Q24 28 32 30 Q40 28 44 36" stroke="#F43F5E" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M16 48 Q20 40 28 42" stroke="#F43F5E" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M48 48 Q44 40 36 42" stroke="#F43F5E" stroke-width="3" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL BÁSICO -->
+    <section class="nivel-section aparato-hero--suelo section" id="basico" aria-labelledby="basico-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--basico">⭐ Nivel Básico</span>
+          <h2 class="nivel-header__title" id="basico-titulo">Empieza por aquí</h2>
+          <p class="nivel-header__desc">Los fundamentos del suelo. Domina estos ejercicios antes de pasar al siguiente nivel.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🔄</div>
+              <h3 class="ejercicio-card__nombre">Rodada adelante</h3>
+              <p class="ejercicio-card__desc">Desde de pie, agáchate, apoya las manos, mete el mentón al pecho y rueda hacia adelante haciendo una bola. Termina de pie sin apoyar las manos en el suelo.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El secreto está en el mentón: si lo mantienes pegado al pecho durante toda la rodada, saldrá perfecta siempre."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 8 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🔙</div>
+              <h3 class="ejercicio-card__nombre">Rodada atrás</h3>
+              <p class="ejercicio-card__desc">Siéntate desde de pie, rueda hacia atrás manteniendo las rodillas al pecho. Al pasar por los hombros, empuja fuerte con las manos para proteger el cuello y termina de pie.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Empuja con las dos manos al mismo tiempo cuando sientas que tu peso pasa por los hombros. ¡Ese es el momento clave!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 8 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">⭐</div>
+              <h3 class="ejercicio-card__nombre">Media luna (Cartwheel)</h3>
+              <p class="ejercicio-card__desc">Imagina una línea recta en el suelo. Desde de pie, levanta un brazo, da un paso lateral y coloca las manos en la línea una detrás de la otra mientras las piernas pasan por encima estiradas.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Pon una cinta en el suelo y practica que todas tus manos y pies la toquen. ¡La línea recta es tu mejor amiga!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 8 cada lado</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦢</div>
+              <h3 class="ejercicio-card__nombre">Arabesco estático</h3>
+              <p class="ejercicio-card__desc">De pie sobre una pierna, extiende la pierna libre hacia atrás lo más alto que puedas manteniendo la cadera cuadrada. Los brazos abiertos o al frente. Mantén la posición sin perder el equilibrio.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Fija la mirada en un punto fijo delante de ti. Los ojos son tu ancla para el equilibrio."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 seg c/pierna</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦘</div>
+              <h3 class="ejercicio-card__nombre">Salto tuck</h3>
+              <p class="ejercicio-card__desc">Salta con los dos pies, lleva las rodillas al pecho en el punto más alto, y aterriza suavemente con las rodillas ligeramente flexionadas. El objetivo es que las rodillas toquen los brazos en el aire.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Aterriza siempre con las rodillas un poco dobladas para absorber el golpe. ¡Así protegemos nuestras rodillas!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🧱</div>
+              <h3 class="ejercicio-card__nombre">Vertical en pared</h3>
+              <p class="ejercicio-card__desc">Coloca las manos a unos 30 cm de la pared, sube las piernas hasta apoyarlas en ella. Cuerpo recto, brazos estirados, empuja con los hombros. Aguanta la posición respirando con calma.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Aprieta el core como si fuera una tabla. Cuanto más rígido esté tu cuerpo, más fácil es mantener el pino."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 5 × 20 seg</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--basico">⭐ Básico</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL INTERMEDIO -->
+    <section class="nivel-section nivel-section--alt aparato-hero--suelo section" id="intermedio" aria-labelledby="intermedio-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--intermedio">⭐⭐ Nivel Intermedio</span>
+          <h2 class="nivel-header__title" id="intermedio-titulo">Sube el nivel</h2>
+          <p class="nivel-header__desc">Ya tienes los fundamentos. Ahora añadimos velocidad, altura y combinaciones.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">💥</div>
+              <h3 class="ejercicio-card__nombre">Rondada</h3>
+              <p class="ejercicio-card__desc">Corre, da un paso de impulso (batida), coloca las manos en el suelo como en la media luna pero girando las caderas para que los pies caigan juntos detrás de ti. Sales mirando hacia donde viniste.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El final de la rondada es la energía para el siguiente elemento. ¡Los pies deben caer juntos y con fuerza para rebotar!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 6 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🕺</div>
+              <h3 class="ejercicio-card__nombre">Pirouette (giro en 1/1)</h3>
+              <p class="ejercicio-card__desc">Desde relevé (punta), impulsa los brazos y gira 360° sobre una pierna. La pierna libre pegada al tobillo o a la rodilla de apoyo. La cabeza "fouetté" para no marearse: gira al final.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El secreto del giro es la cabeza: mira un punto fijo, gira el cuerpo y deja que la cabeza llegue al final. ¡Así no te mareas!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 cada lado</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦅</div>
+              <h3 class="ejercicio-card__nombre">Gran salto (Grand jeté)</h3>
+              <p class="ejercicio-card__desc">Corre, impulsa con una pierna y salta intentando llegar al espagat en el aire. La pierna de impulso va atrás, la pierna libre al frente. Cuanto más alto, más tiempo para estirar las piernas.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Piensa 'alto' antes que 'espagat'. Con altura tienes tiempo para estirar. Sin altura, da igual lo flexible que seas."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 6 cada pierna</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌉</div>
+              <h3 class="ejercicio-card__nombre">Puente de pie</h3>
+              <p class="ejercicio-card__desc">Desde de pie, estira los brazos por encima de la cabeza, dobla la espalda hacia atrás y apoya las manos en el suelo haciendo un puente. Las piernas rectas, las caderas bien altas.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Empuja el pecho entre los brazos y las caderas hacia arriba. Un puente alto y bonito es señal de una espalda y hombros muy flexibles."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 10 seg</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🤸</div>
+              <h3 class="ejercicio-card__nombre">Vertical libre (pino)</h3>
+              <p class="ejercicio-card__desc">Sin pared. Desde de pie, da un paso, baja las manos y da una patada hacia arriba para llegar al pino. Core apretado, hombros empujando, mirada entre las manos. Aguanta todo lo que puedas.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Cuando llegues al punto más alto, aprieta TODO: piernas juntas, pies en punta, core duro. En ese momento ganas estabilidad."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 5 × intento máx.</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🔀</div>
+              <h3 class="ejercicio-card__nombre">Media luna + rodada</h3>
+              <p class="ejercicio-card__desc">Combina una media luna seguida de una rodada adelante sin pausa. Esta conexión entrena el ritmo y la fluidez entre elementos acrobáticos, imprescindible para una serie de suelo.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "En gimnasia la belleza está en las transiciones. Que no se note dónde termina un elemento y dónde empieza el siguiente."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 series</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--intermedio">⭐⭐ Intermedio</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL AVANZADO -->
+    <section class="nivel-section aparato-hero--suelo section" id="avanzado" aria-labelledby="avanzado-titulo">
+      <div class="container">
+        <div class="nivel-header reveal">
+          <span class="nivel-badge nivel-badge--avanzado">⭐⭐⭐ Nivel Avanzado</span>
+          <h2 class="nivel-header__title" id="avanzado-titulo">El siguiente paso</h2>
+          <p class="nivel-header__desc">Elementos que marcan la diferencia en competición. Requieren base sólida y supervisión.</p>
+        </div>
+        <div class="ejercicios-grid">
+
+          <article class="ejercicio-card reveal" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">⚡</div>
+              <h3 class="ejercicio-card__nombre">Rondada + flic-flac</h3>
+              <p class="ejercicio-card__desc">La combinación clásica del suelo. Tras la rondada, aprovecha el rebote para lanzarte hacia atrás en un flic-flac (back handspring). Las manos tocan el suelo apenas un instante. Necesita velocidad y confianza.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Practica primero el flic-flac solo con colchoneta de apoyo. Cuando lo tengas seguro, lo encadenas con la rondada. Nunca al revés."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 series</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌪️</div>
+              <h3 class="ejercicio-card__nombre">Doble giro (1 + 1)</h3>
+              <p class="ejercicio-card__desc">Desde relevé, haz un giro completo, sin parar añade un segundo giro completo. El impulso de brazos al inicio es doble, y el cuerpo debe estar aún más compacto que en el giro sencillo.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El primer giro es el que genera velocidad para el segundo. Si el primero es lento, el segundo no llegará. ¡Da todo desde el inicio!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 cada lado</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🦌</div>
+              <h3 class="ejercicio-card__nombre">Salto de ciervo</h3>
+              <p class="ejercicio-card__desc">Salta desde una pierna, la pierna de impulso queda doblada por detrás (actitud), la pierna libre sale al frente completamente estirada. La cadera muy alta y el cuerpo alargado en el punto cumbre.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "El salto de ciervo tiene una forma muy reconocible: practica la posición en el suelo primero para que tu cuerpo la memorice."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 6 cada pierna</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🎭</div>
+              <h3 class="ejercicio-card__nombre">Serie acrobática completa</h3>
+              <p class="ejercicio-card__desc">Encadena: rondada + flic-flac + salto mortal o elemento de finalización (salto de ciervo, gran jeté). Esta serie es el bloque central de cualquier ejercicio de suelo en competición.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "La serie completa se trabaja en partes: primero los elementos solos, luego en pares, luego toda la serie. Nunca te saltes pasos."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 3 series</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-1" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🕊️</div>
+              <h3 class="ejercicio-card__nombre">Media luna aérea (intro)</h3>
+              <p class="ejercicio-card__desc">La media luna sin manos. Antes de intentarla, debes tener una media luna perfecta con manos muy rápidas. El movimiento es idéntico pero el cuerpo pasa por el aire sin apoyo. Se trabaja con colchoneta inclinada.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Este es uno de mis elementos favoritos pero también de los más difíciles. Trabájalo SIEMPRE con ayuda al principio. La paciencia aquí es tu mejor entrenamiento."</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ Progresión asistida</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+          <article class="ejercicio-card reveal reveal--delay-2" style="--ah-color:#F43F5E;">
+            <div class="ejercicio-card__top">
+              <div class="ejercicio-card__emoji">🌀</div>
+              <h3 class="ejercicio-card__nombre">Rodada adelante a pino</h3>
+              <p class="ejercicio-card__desc">Rodada adelante que termina en un pino, sin tocar el suelo con los pies entre medias. Requiere velocidad en la rodada, mucha compresión de core y un push de manos fuerte al final.</p>
+              <div class="ejercicio-card__tip"><strong>💡 Emma:</strong> "Al llegar al final de la rodada, empuja el suelo como si quisieras alejarte de él. ¡Ese empuje es el que te manda al pino!"</div>
+            </div>
+            <div class="ejercicio-card__footer">
+              <span class="ejercicio-card__meta">⏱ 3 × 5 rep</span>
+              <span class="ejercicio-card__dif ejercicio-card__dif--avanzado">⭐⭐⭐ Avanzado</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSEJO DE EMMA -->
+    <section class="section emma-tip" aria-labelledby="emma-suelo-tip">
+      <div class="container">
+        <div class="emma-tip__card reveal">
+          <div class="emma-tip__avatar" aria-hidden="true">
+            <div class="avatar-placeholder">ER</div>
+          </div>
+          <div class="emma-tip__content">
+            <span class="emma-tip__label">💬 Consejo de Emma sobre el suelo</span>
+            <blockquote class="emma-tip__quote" id="emma-suelo-tip">
+              "El suelo es el aparato más completo: necesitas fuerza, flexibilidad, velocidad y expresión artística. Dedica 10 minutos al día a trabajar los elementos básicos y en tres meses notarás la diferencia."
+            </blockquote>
+            <a href="../programa/index.html" class="btn btn--primary btn--sm">
+              Ver mi programa semanal <i data-lucide="chevron-right"></i>
+            </a>
+          </div>
+          <div class="emma-tip__deco" aria-hidden="true">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTROS APARATOS -->
+    <div class="aparatos-strip">
+      <div class="container aparatos-strip__inner">
+        <span class="aparatos-strip__label">Otros aparatos:</span>
+        <a href="barra.html"      class="aparatos-strip__link strip-barra">🤸 Barra de equilibrio</a>
+        <a href="paralelas.html"  class="aparatos-strip__link strip-paralelas">⚡ Paralelas asimétricas</a>
+        <a href="salto.html"      class="aparatos-strip__link strip-salto">🚀 Salto / Plinto</a>
+        <a href="acrobacias.html" class="aparatos-strip__link strip-acrobacias">💪 Acrobacias y físico</a>
+      </div>
+    </div>
+
+    <!-- BANNER MOTIVACIONAL -->
+    <section class="motivacion-banner" aria-hidden="true">
+      <div class="motivacion-banner__track">
+        <span>🤸 Ejercicios de suelo</span>
+        <span>✦ Rueda, salta, gira</span>
+        <span>⭐ Cada rep cuenta</span>
+        <span>🏅 Entrena con Emma</span>
+        <span>💜 Pasión por la gimnasia</span>
+        <span>🤸 Ejercicios de suelo</span>
+        <span>✦ Rueda, salta, gira</span>
+        <span>⭐ Cada rep cuenta</span>
+        <span>🏅 Entrena con Emma</span>
+        <span>💜 Pasión por la gimnasia</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-icon">✦</span>
+        <span>Emma Romero · Gimnasia Artística</span>
+      </div>
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="../index.html">Inicio</a>
+        <a href="../programa/index.html">Programa</a>
+        <a href="../consejos/index.html">Consejos</a>
+      </nav>
+      <p class="footer__copy">© 2025 Emma Romero. Hecho con 💜 para gimnastas.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
