@@ -82,41 +82,21 @@
             </a>
           </div>
         </div>
-        <div class="hero__illustration reveal reveal--delay" aria-hidden="true">
-          <!-- Ilustración SVG de gimnasta -->
-          <svg class="gymnast-svg" viewBox="0 0 320 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <!-- Cuerpo gimnasta en posición de equilibrio (figura estilizada) -->
-            <!-- Cabeza -->
-            <circle cx="160" cy="60" r="32" fill="#F43F5E" opacity="0.9"/>
-            <circle cx="152" cy="54" r="4" fill="white"/>
-            <circle cx="168" cy="54" r="4" fill="white"/>
-            <path d="M152 70 Q160 78 168 70" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <!-- Moño -->
-            <ellipse cx="148" cy="36" rx="10" ry="6" fill="#FCD34D" transform="rotate(-20 148 36)"/>
-            <ellipse cx="172" cy="32" rx="10" ry="6" fill="#FCD34D" transform="rotate(20 172 32)"/>
-            <circle cx="160" cy="34" r="5" fill="#F43F5E"/>
-            <!-- Torso -->
-            <path d="M140 92 Q130 130 132 170 L188 170 Q190 130 180 92 Z" fill="#7C3AED" opacity="0.9"/>
-            <!-- Brazos (posición abierta como estrella) -->
-            <path d="M140 105 Q100 85 72 68" stroke="#F43F5E" stroke-width="10" stroke-linecap="round" fill="none"/>
-            <path d="M180 105 Q220 85 248 68" stroke="#F43F5E" stroke-width="10" stroke-linecap="round" fill="none"/>
-            <!-- Manos -->
-            <circle cx="70" cy="67" r="8" fill="#F43F5E"/>
-            <circle cx="250" cy="67" r="8" fill="#F43F5E"/>
-            <!-- Piernas -->
-            <path d="M152 170 Q148 220 145 270 Q142 295 138 320" stroke="#7C3AED" stroke-width="12" stroke-linecap="round" fill="none"/>
-            <path d="M168 170 Q172 220 175 270 Q178 295 182 320" stroke="#7C3AED" stroke-width="12" stroke-linecap="round" fill="none"/>
-            <!-- Pies -->
-            <ellipse cx="136" cy="324" rx="14" ry="7" fill="#7C3AED"/>
-            <ellipse cx="184" cy="324" rx="14" ry="7" fill="#7C3AED"/>
-            <!-- Destellos decorativos -->
-            <path d="M40 160 L46 150 L52 160 L46 170 Z" fill="#FCD34D"/>
-            <path d="M270 200 L276 190 L282 200 L276 210 Z" fill="#FCD34D"/>
-            <circle cx="60" cy="280" r="6" fill="#FCD34D" opacity="0.7"/>
-            <circle cx="280" cy="120" r="8" fill="#F43F5E" opacity="0.5"/>
-            <circle cx="90" cy="340" r="5" fill="#7C3AED" opacity="0.5"/>
-            <circle cx="240" cy="310" r="7" fill="#F43F5E" opacity="0.4"/>
-          </svg>
+        <div class="hero__illustration reveal reveal--delay">
+          <!-- Foto de portada Emma -->
+          <div class="hero__photo-wrap">
+            <img
+              src="assets/images/portada.jpg"
+              alt="Emma Romero, entrenadora de gimnasia artística"
+              class="hero__photo"
+              width="480"
+              height="640"
+              loading="eager"
+            />
+            <!-- Estrella decorativa -->
+            <div class="hero__photo-deco hero__photo-deco--star" aria-hidden="true">⭐</div>
+            <div class="hero__photo-deco hero__photo-deco--diamond" aria-hidden="true">✦</div>
+          </div>
           <!-- Tarjeta flotante: racha -->
           <div class="hero__badge-float hero__badge-float--left">
             <span class="badge-float__emoji">🏅</span>
@@ -129,8 +109,8 @@
           <div class="hero__badge-float hero__badge-float--right">
             <span class="badge-float__emoji">⭐</span>
             <div>
-              <p class="badge-float__label">Nivel</p>
-              <p class="badge-float__value">¡Tú eliges!</p>
+              <p class="badge-float__label">Entrena con</p>
+              <p class="badge-float__value">Emma Romero</p>
             </div>
           </div>
         </div>
