@@ -572,10 +572,20 @@ button {
   width: 64px;
   height: 64px;
   color: var(--card-color, var(--color-primary));
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 10px;
 }
 .aparato-card__icon svg {
   width: 100%;
   height: 100%;
+}
+.aparato-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
 }
 
 .aparato-card__content {
@@ -1640,6 +1650,13 @@ button {
 .aparato-hero__icon-wrap svg {
   width: 110px;
   height: 110px;
+}
+.aparato-hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  display: block;
 }
 
 @keyframes gymnast-float {
